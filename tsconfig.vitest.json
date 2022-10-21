@@ -1,0 +1,9 @@
+{
+  "exclude": [],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "composite": true,
+    "lib": [],
+    "types": ["node", "jsdom", "vitest/globals", "@testing-library/jest-dom"]
+  }
+}
