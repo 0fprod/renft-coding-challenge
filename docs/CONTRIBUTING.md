@@ -32,24 +32,22 @@ refactor/change-nft-api
 feature/filter-favourites
 fix/user-saved-favourites
 ```
-<!--
+
 ### Pull request
-
-Same structure as [changelog.md](http://changelog.md) [https://keepachangelog.com/en/1.0.0/](https://keepachangelog.com/en/1.0.0/)
-
-1. Last develop commit must be only the [CHANGELOG.md](CHANGELOG.md) with a versioned tag e.g. vx.y.z.
-2. Create PR from develop to master
-3. Merge
+Add commits as description and use squash strategy
 
 
 ## Project structure
 ```sh
 
 ```
--->
+
 
 
 ## Developing scripts
+```sh
+npm run dev
+```
 
 ### Type-Check and Compile for Production
 
