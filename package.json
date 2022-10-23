@@ -13,10 +13,12 @@
     "test:coverage": "vitest run --coverage",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "server": "json-graphql-server data/azrael.collection.js --p 8080",
     "prepare": "husky install"
   },
   "dependencies": {
-    "graphql-request": "^5.0.0",
+    "@apollo/client": "^3.7.0",
+    "graphql": "^14.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -32,6 +34,7 @@
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@vitejs/plugin-react": "^2.1.0",
     "@vitest/coverage-c8": "^0.24.3",
+    "cross-fetch": "^3.1.5",
     "eslint": "^8.25.0",
     "eslint-config-standard-with-typescript": "^23.0.0",
     "eslint-plugin-import": "^2.26.0",
@@ -41,6 +44,7 @@
     "eslint-plugin-react": "^7.31.10",
     "husky": "^8.0.1",
     "jsdom": "^20.0.1",
+    "json-graphql-server": "^2.3.2",
     "prettier": "^2.7.1",
     "typescript": "^4.8.4",
     "vite": "^3.1.0",
