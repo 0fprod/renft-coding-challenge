@@ -8,12 +8,13 @@
     "build": "tsc && vite build",
     "prepreview": "npm run build",
     "preview": "vite preview",
-    "test": "vitest run",
+    "start-server": "json-graphql-server data/azrael.collection.js --p 8080",
+    "test": "start-server-and-test start-server http-get://localhost:8080 test-once",
+    "test-once": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "server": "json-graphql-server data/azrael.collection.js --p 8080",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -46,6 +47,7 @@
     "jsdom": "^20.0.1",
     "json-graphql-server": "^2.3.2",
     "prettier": "^2.7.1",
+    "start-server-and-test": "^1.14.0",
     "typescript": "^4.8.4",
     "vite": "^3.1.0",
     "vitest": "^0.24.3"
