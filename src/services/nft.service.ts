@@ -1,6 +1,6 @@
 import { Nft } from '../models/NFT'
 import { NFTMetadata } from '../models/NFTMetadata'
-import { NftEndpoint } from '../repositories/alchemy'
+import { NftEndpoint } from '../repositories/api'
 import { AzraelContractIndexer } from '../repositories/graphql/azrael'
 
 export interface NftService {
@@ -10,8 +10,8 @@ export interface NftService {
 
 export const createNftService = (
   azralRepository: AzraelContractIndexer,
-  alchemyRepository: NftEndpoint
+  nftMetadataRepository: NftEndpoint
 ): NftService => ({
   getLendingNfts: azralRepository.getLendingNfts,
-  getNftMetadata: alchemyRepository.getNftMetadata
+  getNftMetadata: nftMetadataRepository.getNftMetadata
 })

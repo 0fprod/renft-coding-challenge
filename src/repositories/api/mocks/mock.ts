@@ -1,4 +1,4 @@
-export const alchemyNftMetadataMock = {
+export const nftMetadataMock = {
   contract: {
     address: 'aValidAddress',
     name: 'aName',
