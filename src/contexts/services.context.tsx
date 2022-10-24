@@ -4,10 +4,12 @@ import { createAzraelContractIndexer } from '../repositories/graphql/azrael'
 import { createNftService, NftService } from '../services/nft.service'
 
 export interface ContextServiceValues {
-  nftService?: NftService
+  nftService: NftService
 }
 
-export const ServiceContext: React.Context<ContextServiceValues> = React.createContext({})
+export const ServiceContext: React.Context<ContextServiceValues> = React.createContext({
+  nftService: createNftService(createAzraelContractIndexer(), createNftEndpoint())
+})
 
 export const ServicesProvider: React.FC<{ children: JSX.Element }> = ({ children }) => {
   const contractIndexerRepository = createAzraelContractIndexer()
