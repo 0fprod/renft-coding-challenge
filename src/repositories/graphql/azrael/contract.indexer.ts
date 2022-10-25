@@ -15,13 +15,8 @@ export const createAzraelContractIndexer = (): AzraelContractIndexer => {
     link: new HttpLink({ uri, fetch })
   })
 
-  const getLendingNfts = async (): Promise<Nft[]> => {
-    try {
-      return await gqlClient.query({ query: lendingsQuery }).then(map)
-    } catch (e) {
-      console.error('Error while fetching -->', e)
-      return []
-    }
+  const getLendingNfts = (): Promise<Nft[]> => {
+    return gqlClient.query({ query: lendingsQuery }).then(map)
   }
 
   return {

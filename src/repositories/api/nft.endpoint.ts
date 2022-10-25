@@ -13,9 +13,10 @@ export const createNftEndpoint = (): NftEndpoint => {
     network: Network.ETH_MAINNET
   })
 
-  const getNftMetadata = async (nftAddress: string, tokenId: string): Promise<NFTMetadata> => {
-    return await alchemy.nft.getNftMetadata(nftAddress, tokenId).then(map)
+  const getNftMetadata = (nftAddress: string, tokenId: string): Promise<NFTMetadata> => {
+    return alchemy.nft.getNftMetadata(nftAddress, tokenId).then(map)
   }
+
   return {
     clientExposedForTestingOnly: alchemy,
     getNftMetadata
