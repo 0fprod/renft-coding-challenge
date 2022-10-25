@@ -2,7 +2,19 @@
 ## GIT Conventions
 ### Commits
 
-We use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) along with [commitlintjs](https://commitlint.js.org/) to have more control.
+We use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) along with [commitlintjs](https://commitlint.js.org/) to have more control. Here is a short brief:
+
+- build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+- chore: updating grunt tasks etc; no production code change
+- ci: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+- docs: Documentation only changes
+- feat: A new feature
+- fix: A bug fix
+- perf: A code change that improves performance
+- refactor: A code change that neither fixes a bug nor adds a feature
+- style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+- test: Adding missing tests or correcting existing tests
+
 
 
 The commits have the following format:
@@ -14,7 +26,7 @@ The commits have the following format:
 Example:
 
 ```
-:feat: implement NFT details view
+feat: implement NFT details view
 ```
 
 ### Branching
@@ -32,24 +44,22 @@ refactor/change-nft-api
 feature/filter-favourites
 fix/user-saved-favourites
 ```
-<!--
+
 ### Pull request
-
-Same structure as [changelog.md](http://changelog.md) [https://keepachangelog.com/en/1.0.0/](https://keepachangelog.com/en/1.0.0/)
-
-1. Last develop commit must be only the [CHANGELOG.md](CHANGELOG.md) with a versioned tag e.g. vx.y.z.
-2. Create PR from develop to master
-3. Merge
+Add commits as description and use squash strategy
 
 
 ## Project structure
 ```sh
 
 ```
--->
+
 
 
 ## Developing scripts
+```sh
+npm run dev
+```
 
 ### Type-Check and Compile for Production
 
