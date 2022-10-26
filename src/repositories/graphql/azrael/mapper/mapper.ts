@@ -1,7 +1,7 @@
 import { ApolloQueryResult } from '@apollo/client'
-import { Nft } from '../../../../models/NFT'
+import { NftData } from '../../../../models/NFTData'
 
-export const map = (result: ApolloQueryResult<any>): Nft[] => {
+export const map = (result: ApolloQueryResult<any>): NftData[] => {
   return result.data.allLendings.map((item: any) => ({
     address: item.nftAddress
   }))

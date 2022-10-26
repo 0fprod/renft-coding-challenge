@@ -1,11 +1,11 @@
 import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client'
 import { fetch } from 'cross-fetch'
-import { Nft } from '../../../models/NFT'
+import { NftData } from '../../../models/NFTData'
 import { map } from './mapper/mapper'
 import { lendingsQuery } from './queries/lendings'
 
 export interface AzraelContractIndexer {
-  getLendingNfts: () => Promise<Nft[]>
+  getLendingNfts: () => Promise<NftData[]>
 }
 
 export const createAzraelContractIndexer = (): AzraelContractIndexer => {
@@ -15,7 +15,7 @@ export const createAzraelContractIndexer = (): AzraelContractIndexer => {
     link: new HttpLink({ uri, fetch })
   })
 
-  const getLendingNfts = (): Promise<Nft[]> => {
+  const getLendingNfts = (): Promise<NftData[]> => {
     return gqlClient.query({ query: lendingsQuery }).then(map)
   }
 
