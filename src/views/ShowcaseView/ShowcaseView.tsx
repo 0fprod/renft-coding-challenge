@@ -10,29 +10,30 @@ export const ShowcaseView: React.FC<{}> = () => {
   const [filteredNfts, setFilteredNfts] = useState<NFT[]>([])
   const { getNFTs } = useNft()
   const [page, setPage] = useState(0)
-  const fetch = useCallback(
-    (page: number) => {
-      getNFTs(ITEMS_PER_PAGE, page).then((incomming) => {
-        setNfts([...allNfts, ...incomming])
-      })
-    },
-    [page]
-  )
-  const fetchNextPage = (): void => {
+
+  const fetch = useCallback(() => {
+    getNFTs(ITEMS_PER_PAGE, page).then((nfts) => {
+      setNfts([...allNfts, ...nfts])
+      setFilteredNfts([...allNfts, ...nfts])
+    })
+  }, [page])
+
+  const fetchMore = (): void => {
     setPage(page + 1)
   }
+
   const filterHandler = (term: string): void => {
-    setFilteredNfts(allNfts.filter((item) => item.title.includes(term)))
+    setFilteredNfts(allNfts.filter((item) => item.title.toLowerCase().includes(term.toLowerCase())))
   }
 
   useEffect(() => {
-    fetch(page)
-  }, [fetch])
+    fetch()
+  }, [page])
 
   return (
     <div>
       <h1>Showcase view</h1>
-      <button onClick={fetchNextPage}> Fetch More</button>
+      <button onClick={fetchMore}> Fetch More</button>
       <Filters onInput={filterHandler} toggleAvailable={() => {}} toggleFavourites={() => {}} />
       <br />
       <Showcase nfts={filteredNfts} />
