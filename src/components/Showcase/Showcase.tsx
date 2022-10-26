@@ -12,7 +12,7 @@ export const Showcase: React.FC<Props> = ({ nfts = [] }) => {
       {nfts.length === 0 && <h5>no nfts</h5>}
       <ul>
         {nfts.map((nft) => (
-          <li key={nft.title}>
+          <li key={nft.address}>
             <NftCard nft={nft} />
           </li>
         ))}

@@ -1,9 +1,9 @@
 import React from 'react'
 
 interface Props {
-  onInput: (value: string) => string
-  toggleFavourites: (checked: boolean) => boolean
-  toggleAvailable: (checked: boolean) => boolean
+  onInput: (value: string) => void
+  toggleFavourites: (checked: boolean) => void
+  toggleAvailable: (checked: boolean) => void
 }
 
 export const Filters: React.FC<Props> = ({ onInput, toggleFavourites, toggleAvailable }) => {
