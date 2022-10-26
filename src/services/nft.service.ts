@@ -27,6 +27,7 @@ export const createNftService = (
       if (element.status === 'rejected') continue
 
       nftList.push({
+        id: nftData[index].id,
         address: nftData[index].address,
         tokenId: nftData[index].tokenId,
         description: element.value.description,

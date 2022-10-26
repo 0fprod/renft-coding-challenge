@@ -9,11 +9,13 @@ describe('NFT Service', () => {
     vi.spyOn(azraelRepository, 'getLendingNfts').mockResolvedValue([
       {
         address: '0xAddress',
-        tokenId: '1'
+        tokenId: '1',
+        id: 'anId'
       },
       {
         address: '0xAddress',
-        tokenId: '2'
+        tokenId: '2',
+        id: 'anotherId'
       }
     ])
     const alchemySpy = vi.spyOn(alchemyRepository, 'getNftMetadata').mockResolvedValue({
@@ -35,5 +37,6 @@ describe('NFT Service', () => {
     expect(nft.title).toBe('aTitle')
     expect(nft.imageUrl).toEqual('anImageUrl')
     expect(nft.tokenId).toEqual('1')
+    expect(nft.id).toEqual('anId')
   })
 })

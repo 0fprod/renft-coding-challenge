@@ -22,6 +22,6 @@ describe('Azrael Contract Indexer mapper', () => {
     const nft = map(queryResult)[0]
 
     expect(nft.address).toEqual(lendingNft.nftAddress)
-    expect(nft.tokenId).toEqual(lendingNft.tokenId)
+    expect(nft.id).toEqual(lendingNft.id)
   })
 })

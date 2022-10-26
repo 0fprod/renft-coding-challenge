@@ -13,6 +13,6 @@ describe('Contract Indexer', () => {
     const [second] = await getLendingNfts(1, 1)
 
     expect(first.address).not.toEqual(second.address)
-    expect(first.tokenId).not.toEqual(second.tokenId)
+    expect(first.id).not.toEqual(second.id)
   })
 })
