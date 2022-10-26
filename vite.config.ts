@@ -10,11 +10,12 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: './test.setup.ts',
+    reporters: ['verbose']
   },
   server: {
-    port: 3000,
+    port: 3000
   },
   preview: {
-    port: 8080,
-  },
+    port: 8080
+  }
 })
