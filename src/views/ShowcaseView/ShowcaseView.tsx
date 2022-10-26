@@ -2,16 +2,13 @@ import { useCallback, useEffect, useState } from 'react'
 import { useNft } from '../../hooks/useNft.hook'
 import { NFT } from '../../models/NFT'
 import { Showcase } from '../../components/Showcase/Showcase'
-import { NftData } from '../../models/NFTData'
 
 export const ShowcaseView: React.FC<{}> = () => {
-  const [nfts, setNfts] = useState<NftData[]>([]) // all state this should increase on loadMore
-  const { getLendingNfts } = useNft()
+  const [nfts, setNfts] = useState<NFT[]>([]) // all state this should increase on loadMore
+  const { getNFTs } = useNft()
 
   const fetch = useCallback(() => {
-    getLendingNfts().then((r) => {
-      setNfts(r)
-    })
+    getNFTs().then(setNfts)
   }, [])
 
   useEffect(() => {
@@ -23,7 +20,7 @@ export const ShowcaseView: React.FC<{}> = () => {
       <h1>Showcase view</h1>
 
       <br />
-      <Showcase nfts={nfts as NFT[]} />
+      <Showcase nfts={nfts} />
     </div>
   )
 }

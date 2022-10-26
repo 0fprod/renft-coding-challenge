@@ -11,8 +11,7 @@ describe('ShowcaseView', () => {
   it('fetches data on mount', async () => {
     const fetchMock = vi.fn().mockResolvedValue([])
     vi.spyOn(hook, 'useNft').mockImplementationOnce(() => ({
-      getLendingNfts: fetchMock,
-      getNftMetadata: vi.fn().mockResolvedValue({})
+      getNFTs: fetchMock
     }))
     await act(() => {
       Render(<ShowcaseView />)
