@@ -7,6 +7,7 @@ describe('Service context', () => {
     const ContextConsumer: React.FC<{ availableServices: any }> = ({ availableServices }) => {
       const context = React.useContext(ServiceContext)
       availableServices.nftService = context.nftService
+      availableServices.storageService = context.storageService
       return <React.Fragment />
     }
     const emptyServices: any = {}
@@ -18,5 +19,6 @@ describe('Service context', () => {
     )
 
     expect(emptyServices.nftService).toBeTruthy()
+    expect(emptyServices.storageService).toBeTruthy()
   })
 })
