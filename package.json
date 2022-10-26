@@ -18,9 +18,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.0",
     "alchemy-sdk": "^2.2.0",
-    "graphql": "^14.7.0",
+    "graphql.js": "^0.6.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

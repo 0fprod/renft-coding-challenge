@@ -1,4 +1,3 @@
-import { ApolloQueryResult } from '@apollo/client'
 import { map } from './mapper'
 
 describe('Azrael Contract Indexer mapper', () => {
@@ -19,20 +18,10 @@ describe('Azrael Contract Indexer mapper', () => {
       collateralClaimed: true
     }
 
-    const apolloQueryResult = givenAnApolloQueryResult({
-      data: { allLendings: [lendingNft] }
-    })
-    const nft = map(apolloQueryResult)[0]
+    const queryResult = { allLendings: [lendingNft] }
+    const nft = map(queryResult)[0]
 
     expect(nft.address).toEqual(lendingNft.nftAddress)
     expect(nft.tokenId).toEqual(lendingNft.tokenId)
   })
 })
-
-const givenAnApolloQueryResult = (aqr: Partial<ApolloQueryResult<any>> = {}): ApolloQueryResult<any> => {
-  return {
-    networkStatus: 0,
-    loading: false,
-    data: aqr.data
-  }
-}

@@ -1,8 +1,7 @@
-import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client'
-import { fetch } from 'cross-fetch'
 import { NftData } from '../../../models/NFTData'
 import { map } from './mapper/mapper'
 import { lendingsQuery } from './queries/lendings'
+import GraphQLjs from 'graphql.js'
 
 export interface AzraelContractIndexer {
   getLendingNfts: (perPage: number, page?: number) => Promise<NftData[]>
@@ -10,13 +9,11 @@ export interface AzraelContractIndexer {
 
 export const createAzraelContractIndexer = (): AzraelContractIndexer => {
   const uri: string = import.meta.env.VITE_AZRAEL_URL
-  const gqlClient = new ApolloClient({
-    cache: new InMemoryCache(),
-    link: new HttpLink({ uri, fetch })
-  })
+  const graphqlClient = GraphQLjs(uri)
 
-  const getLendingNfts = (perPage: number, page: number = 0): Promise<NftData[]> => {
-    return gqlClient.query({ query: lendingsQuery, variables: { perPage, page } }).then(map)
+  const getLendingNfts = async (perPage: number, page: number = 0): Promise<NftData[]> => {
+    const lazyQuery = graphqlClient(lendingsQuery)
+    return lazyQuery({ perPage, page }).then(map)
   }
 
   return {
