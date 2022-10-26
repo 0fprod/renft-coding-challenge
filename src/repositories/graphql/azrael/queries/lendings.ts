@@ -1,9 +1,8 @@
-// import { gql } from 'graphql-request'
 import { gql } from '@apollo/client'
 
 export const lendingsQuery = gql`
-  query GetNFTLendings {
-    allLendings {
+  query GetNFTLendings($perPage: Int, $page: Int) {
+    allLendings(perPage: $perPage, page: $page) {
       id
       cursor
       nftAddress

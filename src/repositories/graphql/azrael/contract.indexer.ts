@@ -5,7 +5,7 @@ import { map } from './mapper/mapper'
 import { lendingsQuery } from './queries/lendings'
 
 export interface AzraelContractIndexer {
-  getLendingNfts: () => Promise<NftData[]>
+  getLendingNfts: (perPage: number, page?: number) => Promise<NftData[]>
 }
 
 export const createAzraelContractIndexer = (): AzraelContractIndexer => {
@@ -15,8 +15,8 @@ export const createAzraelContractIndexer = (): AzraelContractIndexer => {
     link: new HttpLink({ uri, fetch })
   })
 
-  const getLendingNfts = (): Promise<NftData[]> => {
-    return gqlClient.query({ query: lendingsQuery }).then(map)
+  const getLendingNfts = (perPage: number, page: number = 0): Promise<NftData[]> => {
+    return gqlClient.query({ query: lendingsQuery, variables: { perPage, page } }).then(map)
   }
 
   return {

@@ -8,6 +8,7 @@ export const NftCard: React.FC<Props> = ({ nft }) => {
     <div>
       <div>{nft.title}</div>
       <div>{nft.address}</div>
+      <img src={nft.imageUrl} alt={nft.name} width={120} height={150} />
     </div>
   )
 }

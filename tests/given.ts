@@ -10,6 +10,7 @@ export function givenAnNft(nft: Partial<NFT>): NFT {
     imageUrl: nft.imageUrl ?? 'irrelevant',
     details: [],
     attributes: [],
+    tokenId: '0',
 
     ...nft
   }

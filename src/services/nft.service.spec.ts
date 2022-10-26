@@ -27,7 +27,7 @@ describe('NFT Service', () => {
     })
     const service = createNftService(azraelRepository, alchemyRepository)
     // Act
-    const [nft] = await service.getNFTs()
+    const [nft] = await service.getNFTs(2)
     // Assert
     expect(alchemySpy).toHaveBeenCalledTimes(2)
     expect(nft.address).toEqual('0xAddress')
