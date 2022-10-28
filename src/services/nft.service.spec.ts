@@ -1,31 +1,26 @@
 import { createNftService } from './nft.service'
 import { createNftEndpoint } from '../repositories/api/nft.endpoint'
 import { createAzraelContractIndexer } from '../repositories/graphql/azrael/contract.indexer'
+import { givenAnNft } from '../../tests/given'
 describe('NFT Service', () => {
   it('merges nft data from repositories', async () => {
     // Arrange
     const azraelRepository = createAzraelContractIndexer()
     const alchemyRepository = createNftEndpoint()
     vi.spyOn(azraelRepository, 'getLendingNfts').mockResolvedValue([
-      {
-        address: '0xAddress',
-        tokenId: '1',
-        id: 'anId'
-      },
-      {
+      givenAnNft({ address: '0xAddress', tokenId: '1', id: 'anId' }),
+      givenAnNft({
         address: '0xAddress',
         tokenId: '2',
         id: 'anotherId'
-      }
+      })
     ])
     const alchemySpy = vi.spyOn(alchemyRepository, 'getNftMetadata').mockResolvedValue({
       address: '0xAddress',
       name: 'aName',
       description: 'aDescription',
       imageUrl: 'anImageUrl',
-      title: 'aTitle',
-      attributes: [],
-      details: []
+      title: 'aTitle'
     })
     const service = createNftService(azraelRepository, alchemyRepository)
     // Act
