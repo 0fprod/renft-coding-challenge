@@ -1,7 +1,12 @@
 import { Availability, NftData } from '../../../../models/NFTData'
+import { PaymentToken } from '../../../../models/PaymentToken'
 
 const getAvilability = (lendingNft: any): Availability => {
-  return lendingNft === null ? 'available' : 'rented'
+  return lendingNft.renting === null ? 'available' : 'rented'
+}
+
+const getPaymentToken = (lendingNft: any): string => {
+  return PaymentToken[lendingNft.paymentToken] ?? '-'
 }
 
 const mapOne = (lendingNft: any): NftData => {
@@ -11,7 +16,8 @@ const mapOne = (lendingNft: any): NftData => {
     address: lendingNft.nftAddress,
     costOfRent: lendingNft.dailyRentPrice,
     collateralRequired: lendingNft.nftPrice,
-    availability: getAvilability(lendingNft)
+    availability: getAvilability(lendingNft),
+    paymentToken: getPaymentToken(lendingNft)
   }
 }
 

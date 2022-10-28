@@ -6,4 +6,5 @@ export interface NftData {
   costOfRent: string
   collateralRequired: string
   availability: Availability
+  paymentToken: string
 }

@@ -2,7 +2,6 @@ import { NFT } from '../../models/NFT'
 import './NftCard.css'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 // import { BigNumber, FixedNumber } from '@ethersproject/bignumber'
-import { useCallback } from 'react'
 interface Props {
   nft: NFT
   toggleFav: (id: string) => void
@@ -34,12 +33,19 @@ export const NftCard: React.FC<Props> = ({ nft, toggleFav }) => {
       </div>
       <div className="costs-details">
         <label htmlFor="collateral">
-          Collateral required: <span> {parsePrice(nft.collateralRequired)}</span>
+          Collateral required:{' '}
+          <span>
+            {' '}
+            {parsePrice(nft.collateralRequired)} {nft.paymentToken}
+          </span>
         </label>
 
         <label htmlFor="rent">
           Cost of rent:
-          <span> {parsePrice(nft.costOfRent)}</span>
+          <span>
+            {' '}
+            {parsePrice(nft.costOfRent)} {nft.paymentToken}
+          </span>
         </label>
       </div>
       <hr />
