@@ -21,7 +21,7 @@ describe('Azrael Contract Indexer mapper', () => {
       }
     }
 
-    const queryResult = { allLendings: [lendingNft] }
+    const queryResult = { data: { lendings: [lendingNft] } }
     const nft = map(queryResult)[0]
 
     expect(nft.id).toEqual(lendingNft.id)

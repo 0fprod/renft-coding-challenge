@@ -1,9 +1,10 @@
 import { NftData } from '../../../models/NFTData'
 import { map } from './mapper/mapper'
 import { lendingsQuery } from './queries/lendings'
-import { createClient } from 'urql'
+import { createClient, Client } from 'urql'
 
 export interface AzraelContractIndexer {
+  clientExposedForTestingOnly: Client
   getLendingNfts: (first: number, skip?: number) => Promise<NftData[]>
 }
 
@@ -16,6 +17,7 @@ export const createAzraelContractIndexer = (): AzraelContractIndexer => {
   }
 
   return {
+    clientExposedForTestingOnly: graphqlClient,
     getLendingNfts
   }
 }
