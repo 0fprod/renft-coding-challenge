@@ -6,8 +6,6 @@ export const map = (nft: any): NFTMetadata => {
     name: nft.contract.name,
     description: nft.description,
     title: nft.title,
-    attributes: [],
-    details: [],
     imageUrl: nft.media[0].gateway
   }
 }

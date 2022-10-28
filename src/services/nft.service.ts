@@ -30,13 +30,14 @@ export const createNftService = (
         id: nftData[index].id,
         address: nftData[index].address,
         tokenId: nftData[index].tokenId,
-        description: element.value.description,
+        availability: nftData[index].availability,
+        collateralRequired: nftData[index].collateralRequired,
+        costOfRent: nftData[index].costOfRent,
         fav: false,
+        description: element.value.description,
         imageUrl: element.value.imageUrl,
         name: element.value.name,
-        title: element.value.title,
-        details: [],
-        attributes: []
+        title: element.value.title
       })
     }
     return nftList

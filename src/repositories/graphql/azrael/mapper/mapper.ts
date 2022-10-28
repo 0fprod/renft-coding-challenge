@@ -1,9 +1,20 @@
-import { NftData } from '../../../../models/NFTData'
+import { Availability, NftData } from '../../../../models/NFTData'
+
+const getAvilability = (lendingNft: any): Availability => {
+  return lendingNft === null ? 'available' : 'rented'
+}
+
+const mapOne = (lendingNft: any): NftData => {
+  return {
+    id: lendingNft.id,
+    tokenId: lendingNft.tokenId,
+    address: lendingNft.nftAddress,
+    costOfRent: lendingNft.dailyRentPrice,
+    collateralRequired: lendingNft.nftPrice,
+    availability: getAvilability(lendingNft)
+  }
+}
 
 export const map = (result: any): NftData[] => {
-  return result.allLendings.map((item: any) => ({
-    address: item.nftAddress,
-    tokenId: item.tokenId,
-    id: item.id
-  }))
+  return result.allLendings.map(mapOne)
 }
