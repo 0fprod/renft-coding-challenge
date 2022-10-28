@@ -1,7 +1,8 @@
 import { NFT } from '../../models/NFT'
 import './NftCard.css'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { BigNumber, FixedNumber } from '@ethersproject/bignumber'
+// import { BigNumber, FixedNumber } from '@ethersproject/bignumber'
+import { useCallback } from 'react'
 interface Props {
   nft: NFT
   toggleFav: (id: string) => void
@@ -13,7 +14,7 @@ export const NftCard: React.FC<Props> = ({ nft, toggleFav }) => {
 
   const parsePrice = (priceInHex: string): string => {
     // I'm not sure how to format the price here
-    return FixedNumber.fromBytes(priceInHex).toString()
+    return priceInHex
     // return BigNumber.from(priceInHex).toString()
   }
 
