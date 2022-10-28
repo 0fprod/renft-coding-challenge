@@ -1,4 +1,5 @@
 import { screen } from '@testing-library/react'
+import { givenAnNft } from '../../../tests/given'
 import { Render } from '../../../tests/render'
 import { ServiceContext } from '../../contexts/services.context'
 import { NftService } from '../../services/nft.service'
@@ -29,14 +30,14 @@ describe('ShowcaseView', () => {
     const { user } = Render(
       wrapShowcaseViewWithContext({
         getNFTs: vi.fn().mockResolvedValue([
-          {
+          givenAnNft({
             title: 'a title',
             id: '1'
-          },
-          {
+          }),
+          givenAnNft({
             title: 'another title',
             id: '2'
-          }
+          })
         ])
       })
     )
@@ -50,16 +51,16 @@ describe('ShowcaseView', () => {
 
   it.skip('filters by fav', async () => {
     const mockedNfts = [
-      {
+      givenAnNft({
         title: 'a title',
         id: '1',
         fav: true
-      },
-      {
+      }),
+      givenAnNft({
         title: 'another title',
         id: '2',
         fav: false
-      }
+      })
     ]
     const { user, debug } = Render(
       wrapShowcaseViewWithContext({

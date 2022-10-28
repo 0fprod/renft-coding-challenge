@@ -29,8 +29,12 @@ export const ShowcaseView: React.FC<{}> = () => {
   const filterByTitle = (term: string): void => {
     setFilteredNfts(allNfts.filter((item) => item.title.toLowerCase().includes(term.toLowerCase())))
   }
-  const filterOnlyFavourites = (): void => {
-    setFilteredNfts(allNfts.filter((item) => item.fav))
+  const filterOnlyFavourites = (viewOnlyFavs: boolean): void => {
+    if (viewOnlyFavs) {
+      setFilteredNfts(allNfts.filter((item) => item.fav))
+    } else {
+      setFilteredNfts(allNfts)
+    }
   }
 
   // Update filtered data

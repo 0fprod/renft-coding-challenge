@@ -1,7 +1,7 @@
 import { NFT } from '../../models/NFT'
 import './NftCard.css'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-// import { BigNumber, FixedNumber } from '@ethersproject/bignumber'
+import { BigNumber, FixedNumber } from '@ethersproject/bignumber'
 interface Props {
   nft: NFT
   toggleFav: (id: string) => void
@@ -13,8 +13,8 @@ export const NftCard: React.FC<Props> = ({ nft, toggleFav }) => {
 
   const parsePrice = (priceInHex: string): string => {
     // I'm not sure how to format the price here
-    return priceInHex
-    // return BigNumber.from(priceInHex).toString()
+    // return priceInHex
+    return BigNumber.from(priceInHex).toString()
   }
 
   const getAvailabilityClassNames = (): string[] => {
@@ -33,7 +33,7 @@ export const NftCard: React.FC<Props> = ({ nft, toggleFav }) => {
       </div>
       <div className="costs-details">
         <label htmlFor="collateral">
-          Collateral required:{' '}
+          Collateral req:{' '}
           <span>
             {' '}
             {parsePrice(nft.collateralRequired)} {nft.paymentToken}

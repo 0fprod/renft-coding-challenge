@@ -1,6 +1,7 @@
 import { screen } from '@testing-library/react'
 import { givenAnNft } from '../../../tests/given'
 import { Render } from '../../../tests/render'
+import { PaymentToken } from '../../models/PaymentToken'
 import { NftCard } from './NftCard'
 
 describe('NFTCard', () => {
@@ -22,5 +23,10 @@ describe('NFTCard', () => {
     Render(<NftCard nft={givenAnNft({ availability: 'rented' })} toggleFav={vi.fn} />)
 
     expect(screen.getByText('rented')).toHaveClass('availability rented')
+  })
+
+  it('displays the correct unit', () => {
+    Render(<NftCard nft={givenAnNft({ paymentToken: PaymentToken[2] })} toggleFav={vi.fn} />)
+    expect(screen.getAllByText('0 DAI')).toHaveLength(2)
   })
 })
