@@ -28,4 +28,14 @@ describe('Contract Indexer', () => {
     expect(first.address).not.toEqual(second.address)
     expect(first.id).not.toEqual(second.id)
   })
+
+  it('gets available lendings', async () => {
+    const { getAvailableLendingsOnly, clientExposedForTestingOnly } = createAzraelContractIndexer()
+    // @ts-expect-error
+    vi.spyOn(clientExposedForTestingOnly, 'query').mockImplementation(() => ({
+      toPromise: vi.fn().mockResolvedValue(LendingsMock) as any
+    }))
+    const result = await getAvailableLendingsOnly(2)
+    expect(result).toHaveLength(2)
+  })
 })

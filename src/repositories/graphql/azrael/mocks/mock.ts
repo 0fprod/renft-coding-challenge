@@ -44,6 +44,7 @@ export const FirstPaginatedLendingsMock = {
     ]
   }
 }
+
 export const SecondPaginatedLendingsMock = {
   data: {
     lendings: [

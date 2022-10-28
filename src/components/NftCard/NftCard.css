@@ -48,6 +48,7 @@
 
 .details {
   border: none;
+  color: black;
   padding: 0.5rem;
   width: 7rem;
   background-color: yellow;

@@ -6,6 +6,7 @@ import { AzraelContractIndexer } from '../repositories/graphql/azrael'
 
 export interface NftService {
   getNFTs: (first: number, skip?: number) => Promise<NFT[]>
+  getAvailableNFTs: (first: number) => Promise<NFT[]>
 }
 
 export const createNftService = (
@@ -14,6 +15,14 @@ export const createNftService = (
 ): NftService => {
   const getNFTs = async (first: number, skip: number = 0): Promise<NFT[]> => {
     const nftData = await azraelRepository.getLendingNfts(first, skip)
+    return await requestMetadata(nftData)
+  }
+  const getAvailableNFTs = async (first: number): Promise<NFT[]> => {
+    const nftData = await azraelRepository.getAvailableLendingsOnly(first)
+    return await requestMetadata(nftData)
+  }
+
+  const requestMetadata = async (nftData: NftData[]): Promise<NFT[]> => {
     const nftMetadataPromises = nftData.map((item) => nftMetadataRepository.getNftMetadata(item.address, item.tokenId))
     const nftMetadata = await Promise.allSettled(nftMetadataPromises)
     const nfts = merge(nftData, nftMetadata)
@@ -45,6 +54,7 @@ export const createNftService = (
   }
 
   return {
-    getNFTs
+    getNFTs,
+    getAvailableNFTs
   }
 }

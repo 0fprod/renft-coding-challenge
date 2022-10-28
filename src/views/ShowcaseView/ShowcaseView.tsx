@@ -10,7 +10,7 @@ const ITEMS_PER_PAGE = 2
 export const ShowcaseView: React.FC<{}> = () => {
   const [allNfts, setNfts] = useState<NFT[]>([])
   const [filteredNfts, setFilteredNfts] = useState<NFT[]>([])
-  const { getNFTs } = useNft()
+  const { getNFTs, getAvailableNFTs } = useNft()
   const { addFav, deleteFav } = useStorage()
   const [skip, setSkip] = useState(0)
 
@@ -36,6 +36,13 @@ export const ShowcaseView: React.FC<{}> = () => {
       setFilteredNfts(allNfts)
     }
   }
+  const fetchAvailableOnly = (viewOnlyAvailables: boolean): void => {
+    if (viewOnlyAvailables) {
+      getAvailableNFTs(allNfts.length).then(setNfts)
+    } else {
+      getNFTs(allNfts.length).then(setNfts)
+    }
+  }
 
   // Update filtered data
   useEffect(() => {
@@ -52,7 +59,7 @@ export const ShowcaseView: React.FC<{}> = () => {
     <div>
       <h1>Showcase view</h1>
       <button onClick={fetchMore}> Fetch More</button>
-      <Filters onInput={filterByTitle} toggleAvailable={() => {}} toggleFavourites={filterOnlyFavourites} />
+      <Filters onInput={filterByTitle} toggleAvailable={fetchAvailableOnly} toggleFavourites={filterOnlyFavourites} />
       <br />
       <Showcase nfts={filteredNfts} toggleFav={toggleFav} />
     </div>
