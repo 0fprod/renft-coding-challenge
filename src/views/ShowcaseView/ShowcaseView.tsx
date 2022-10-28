@@ -57,6 +57,11 @@ export const ShowcaseView: React.FC<{}> = () => {
 
   return (
     <div>
+      <h5>
+        <a href="https://github.com/franjpr/renft-coding-challenge" target="_blank" rel="noreferrer">
+          Github repo
+        </a>
+      </h5>
       <h1>Showcase view</h1>
       <button onClick={fetchMore}> Fetch More</button>
       <Filters onInput={filterByTitle} toggleAvailable={fetchAvailableOnly} toggleFavourites={filterOnlyFavourites} />

@@ -49,9 +49,10 @@ export const NftCard: React.FC<Props> = ({ nft, toggleFav }) => {
           </span>
         </label>
       </div>
-      <hr />
       <div className="bottom-wrapper">
-        <button className="details">View details</button>
+        <button className="details" onClick={() => alert('Not implemented')}>
+          View details
+        </button>
         <span className={getAvailabilityClassNames().join(' ')}>{nft.availability}</span>
       </div>
     </div>
