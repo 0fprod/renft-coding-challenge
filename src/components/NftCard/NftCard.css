@@ -1,0 +1,76 @@
+.card-wrapper {
+  border: 1px solid white;
+  min-height: 400px;
+  width: 300px;
+  padding: 1rem;
+  position: relative;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.fav {
+  position: absolute;
+  top:0.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.title {
+  background-color: yellow;
+  color:black;
+  width: 100%;
+  padding: 0.25rem
+}
+
+.costs-details{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bottom-wrapper{
+  position: absolute;
+  bottom: 0.5rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  border: none;
+  padding: 0.5rem;
+  width: 7rem;
+  background-color: yellow;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+.details:hover {
+  background-color: cyan;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+.availability {
+  margin-top: 0.25rem;
+  border-radius: 10px;
+  padding: 0.1rem 0.5rem
+}
+
+.rented {
+  background-color: hotpink;
+}
+
+.available{
+  background-color: greenyellow;
+}

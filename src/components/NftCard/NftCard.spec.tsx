@@ -17,4 +17,10 @@ describe('NFTCard', () => {
     expect(fav).toHaveBeenCalled()
     expect(fav).toHaveBeenCalledWith('anId')
   })
+
+  it('applies classnames bases on availability', () => {
+    Render(<NftCard nft={givenAnNft({ availability: 'rented' })} toggleFav={vi.fn} />)
+
+    expect(screen.getByText('rented')).toHaveClass('availability rented')
+  })
 })
