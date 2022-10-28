@@ -51,6 +51,37 @@ Add commits as description and use squash strategy
 
 ## Project structure
 ```sh
+.
+├── data
+├── docs
+│   ├── CHALLENGE.md
+│   ├── CONTRIBUTING.md
+│   └── sketchs
+├── index.html
+├── public
+├── src
+│   ├── assets
+│   ├── components
+│   │   ├── Filters
+│   │   ├── Media
+│   │   ├── NftCard
+│   │   └── Showcase
+│   ├── contexts (inits repos & services)
+│   ├── hooks (exposes context services)
+│   ├── models
+│   ├── repositories (data access layer)
+│   │   ├── api
+│   │   │   ├── mapper
+│   │   │   └── mocks
+│   │   └── graphql
+│   │       └── azrael
+│   │           ├── mapper
+│   │           ├── mocks
+│   │           └── queries
+│   ├── services (consumes repos)
+│   └── views
+│       └── ShowcaseView
+└── tests (helpers only)
 
 ```
 
@@ -73,13 +104,6 @@ npm run build
 npm run test
 npm run test:watch
 ```
-<!--
-##### E2E tests
-```sh
-npm run test:e2e:open
-npm run test:e2e:run
-```
--->
 
 ****
 [^1]: Proof of Concept

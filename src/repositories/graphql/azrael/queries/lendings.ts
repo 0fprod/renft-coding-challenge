@@ -1,13 +1,15 @@
-// import { gql } from 'graphql-request'
-import { gql } from '@apollo/client'
-
-export const lendingsQuery = gql`
-  query GetNFTLendings {
-    allLendings {
+export const lendingsQuery = `
+  query GetLendingNfts ($first: Int, $skip: Int) {
+    lendings (first: $first, skip: $skip) {
       id
-      cursor
-      nftAddress
       tokenId
+      nftAddress
+      dailyRentPrice
+      nftPrice
+      renting {
+        rentedAt
+      }
+      paymentToken
     }
   }
 `

@@ -8,21 +8,22 @@
     "build": "tsc && vite build",
     "prepreview": "npm run build",
     "preview": "vite preview",
-    "start-server": "json-graphql-server data/azrael.collection.js --p 8080",
-    "test": "start-server-and-test start-server http-get://localhost:8080 test-once",
-    "test-once": "vitest run",
+    "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
+    "start-server": "json-graphql-server data/azrael.collection.js --p 8080",
+    "test:server": "start-server-and-test start-server http-get://localhost:8080 test-once",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky install"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.0",
+    "@ethersproject/bignumber": "^5.7.0",
     "alchemy-sdk": "^2.2.0",
-    "graphql": "^14.7.0",
+    "graphql": "^15.8.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "urql": "^3.0.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",

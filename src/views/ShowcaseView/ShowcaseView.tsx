@@ -1,29 +1,67 @@
-import { useCallback, useEffect, useState } from 'react'
-import { useNft } from '../../hooks/useNft.hook'
+import React, { useEffect, useState } from 'react'
 import { NFT } from '../../models/NFT'
 import { Showcase } from '../../components/Showcase/Showcase'
-import { NftData } from '../../models/NFTData'
+import { Filters } from '../../components/Filters/Filters'
+import { useStorage } from '../../hooks/useStorage.hook'
+import { useNft } from '../../hooks/useNft.hook'
+
+const ITEMS_PER_PAGE = 2
 
 export const ShowcaseView: React.FC<{}> = () => {
-  const [nfts, setNfts] = useState<NftData[]>([]) // all state this should increase on loadMore
-  const { getLendingNfts } = useNft()
+  const [allNfts, setNfts] = useState<NFT[]>([])
+  const [filteredNfts, setFilteredNfts] = useState<NFT[]>([])
+  const { getNFTs, getAvailableNFTs } = useNft()
+  const { addFav, deleteFav } = useStorage()
+  const [skip, setSkip] = useState(0)
 
-  const fetch = useCallback(() => {
-    getLendingNfts().then((r) => {
-      setNfts(r)
-    })
-  }, [])
+  const fetchMore = (): void => {
+    setSkip(allNfts.length)
+  }
+
+  const toggleFav = (id: string): void => {
+    const index = allNfts.findIndex((i) => i.id === id)
+    allNfts[index].fav = !allNfts[index].fav
+    setNfts([...allNfts])
+    allNfts[index].fav ? addFav(id) : deleteFav(id)
+  }
+
+  // Filters
+  const filterByTitle = (term: string): void => {
+    setFilteredNfts(allNfts.filter((item) => item.title.toLowerCase().includes(term.toLowerCase())))
+  }
+  const filterOnlyFavourites = (viewOnlyFavs: boolean): void => {
+    if (viewOnlyFavs) {
+      setFilteredNfts(allNfts.filter((item) => item.fav))
+    } else {
+      setFilteredNfts(allNfts)
+    }
+  }
+  const fetchAvailableOnly = (viewOnlyAvailables: boolean): void => {
+    if (viewOnlyAvailables) {
+      getAvailableNFTs(allNfts.length).then(setNfts)
+    } else {
+      getNFTs(allNfts.length).then(setNfts)
+    }
+  }
+
+  // Update filtered data
+  useEffect(() => {
+    setFilteredNfts(allNfts)
+  }, [allNfts])
 
   useEffect(() => {
-    fetch()
-  }, [fetch])
+    getNFTs(ITEMS_PER_PAGE, skip).then((nfts) => {
+      setNfts([...allNfts, ...nfts])
+    })
+  }, [skip])
 
   return (
     <div>
       <h1>Showcase view</h1>
-
+      <button onClick={fetchMore}> Fetch More</button>
+      <Filters onInput={filterByTitle} toggleAvailable={fetchAvailableOnly} toggleFavourites={filterOnlyFavourites} />
       <br />
-      <Showcase nfts={nfts as NFT[]} />
+      <Showcase nfts={filteredNfts} toggleFav={toggleFav} />
     </div>
   )
 }

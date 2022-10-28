@@ -2,2205 +2,425 @@ module.exports = {
   lendings: [
     {
       id: '103',
-      cursor: 103,
-      nftAddress: '0xc3f733ca98e0dad0386979eb96fb1722a1a05e69',
       tokenId: '20581',
-      lenderAddress: '0x48ddea6de8c0393a26e2590a3b724fc47abdcf22',
-      maxRentDuration: '15',
+      nftAddress: '0xc3f733ca98e0dad0386979eb96fb1722a1a05e69',
       dailyRentPrice: '0x0000005a',
       nftPrice: '0x000005dc',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1627407065',
-      collateralClaimed: true
+      renting: {
+        rentedAt: '1627777443'
+      }
     },
     {
       id: '105',
-      cursor: 105,
-      nftAddress: '0xfaff15c6cdaca61a4f87d329689293e07c98f578',
       tokenId: '1',
-      lenderAddress: '0xd39ea6043d1fa03f5be2beb2cfe65faa4ef0e595',
-      maxRentDuration: '5',
+      nftAddress: '0xfaff15c6cdaca61a4f87d329689293e07c98f578',
       dailyRentPrice: '0x00010000',
       nftPrice: '0x00140000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1627447207',
-      collateralClaimed: true
+      renting: {
+        rentedAt: '1628423889'
+      }
     },
     {
       id: '106',
-      cursor: 106,
-      nftAddress: '0x9d413b9434c20c73f509505f7fbc6fc591bbf04a',
       tokenId: '7085325',
-      lenderAddress: '0xbc2a432a01a64b5bdc9360c22b6603c60e96c867',
-      maxRentDuration: '100',
+      nftAddress: '0x9d413b9434c20c73f509505f7fbc6fc591bbf04a',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x00001388',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1627468549',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '107',
-      cursor: 107,
-      nftAddress: '0x0db8c099b426677f575d512874d45a767e9acc3c',
       tokenId: '1',
-      lenderAddress: '0x75dc67127f851a3fefd38a9183a09803364c575c',
-      maxRentDuration: '7',
+      nftAddress: '0x0db8c099b426677f575d512874d45a767e9acc3c',
       dailyRentPrice: '0x00140000',
       nftPrice: '0x01f40000',
-      paymentToken: '2',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1627484931',
-      collateralClaimed: true
+      renting: {
+        rentedAt: '1628162203'
+      }
     },
     {
       id: '11',
-      cursor: 11,
-      nftAddress: '0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a',
       tokenId: '151493',
-      lenderAddress: '0x426923e98e347158d5c471a9391edaea95516473',
-      maxRentDuration: '10',
+      nftAddress: '0x50f5474724e0ee42d9a4e711ccfb275809fd6d4a',
       dailyRentPrice: '0x00000014',
       nftPrice: '0x00031388',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1627058690',
-      collateralClaimed: true
+      renting: {
+        rentedAt: '1635914083'
+      }
     },
     {
       id: '111',
-      cursor: 111,
-      nftAddress: '0xd4d871419714b778ebec2e22c7c53572b573706e',
       tokenId: '3887',
-      lenderAddress: '0xcdf0437d2dde9307204f330dc6debd2d29cc9d11',
-      maxRentDuration: '1',
+      nftAddress: '0xd4d871419714b778ebec2e22c7c53572b573706e',
       dailyRentPrice: '0x00000352',
       nftPrice: '0x00001388',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1627670552',
-      collateralClaimed: true
+      renting: {
+        rentedAt: '1628305304'
+      }
     },
     {
       id: '112',
-      cursor: 112,
-      nftAddress: '0x3a8778a58993ba4b941f85684d74750043a4bb5f',
       tokenId: '843',
-      lenderAddress: '0x12ffd3da051feafe38d5420bf08ef112f1dfc7c2',
-      maxRentDuration: '30',
+      nftAddress: '0x3a8778a58993ba4b941f85684d74750043a4bb5f',
       dailyRentPrice: '0x000001f4',
       nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1627712703',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '113',
-      cursor: 113,
-      nftAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
       tokenId: '26988627869463380234130690785386738851806103183721947346441956716025544179713',
-      lenderAddress: '0xd14c1f97eda84a43c7e8e4deed31d8b0ccff7100',
-      maxRentDuration: '10',
+      nftAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
       dailyRentPrice: '0x00010000',
       nftPrice: '0x00020000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1627796122',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '116',
-      cursor: 116,
-      nftAddress: '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
       tokenId: '100259785915172647746245848954213430034851451612620645515944082807742132770546',
-      lenderAddress: '0x263108604e0c9e1f6cdcf698e160cd563635a328',
-      maxRentDuration: '28',
+      nftAddress: '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x000001f4',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1627885707',
-      collateralClaimed: false
+      renting: {
+        rentedAt: '1644678834'
+      }
     },
     {
       id: '117',
-      cursor: 117,
-      nftAddress: '0x0db8c099b426677f575d512874d45a767e9acc3c',
       tokenId: '1',
-      lenderAddress: '0xf2b506a799159ac4add1ad7182d1635b6cf5dc24',
-      maxRentDuration: '30',
+      nftAddress: '0x0db8c099b426677f575d512874d45a767e9acc3c',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1627907727',
-      collateralClaimed: false
+      renting: {
+        rentedAt: '1648827658'
+      }
     },
     {
       id: '123',
-      cursor: 123,
-      nftAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
       tokenId: '26132982584538924556590114740376312170836847205654900616374432474738840305665',
-      lenderAddress: '0x953b0f8afc70e0fca9e2e43b0a4914be002c4e94',
-      maxRentDuration: '1',
+      nftAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x00001388',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1628057591',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '124',
-      cursor: 124,
-      nftAddress: '0x6b47e7066c7db71aa04a1d5872496fe05c4c331f',
       tokenId: '178',
-      lenderAddress: '0x4cb01b6672bc750821af952ec5a2447fc90195b1',
-      maxRentDuration: '7',
+      nftAddress: '0x6b47e7066c7db71aa04a1d5872496fe05c4c331f',
       dailyRentPrice: '0x000f0000',
       nftPrice: '0x01f40000',
-      paymentToken: '2',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1628109691',
-      collateralClaimed: true
+      renting: {
+        rentedAt: '1639435000'
+      }
     },
     {
       id: '125',
-      cursor: 125,
-      nftAddress: '0x76be3b62873462d2142405439777e971754e8e77',
       tokenId: '10089',
-      lenderAddress: '0x7246a274656e797fab4b02eb1e0581d46f0358e2',
-      maxRentDuration: '30',
+      nftAddress: '0x76be3b62873462d2142405439777e971754e8e77',
       dailyRentPrice: '0x00010000',
       nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1628128235',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '126',
-      cursor: 126,
-      nftAddress: '0xd4d871419714b778ebec2e22c7c53572b573706e',
       tokenId: '8998',
-      lenderAddress: '0x8bd49c4038bae512e46b1406f3204bfa0715f73a',
-      maxRentDuration: '7',
+      nftAddress: '0xd4d871419714b778ebec2e22c7c53572b573706e',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1628131747',
-      collateralClaimed: true
+      renting: {
+        rentedAt: '1628262351'
+      }
     },
     {
       id: '128',
-      cursor: 128,
-      nftAddress: '0xd07dc4262bcdbf85190c01c996b4c06a461d2430',
       tokenId: '184918',
-      lenderAddress: '0xecd963ccfb50d6a38d49289640d1d37e9f6a0e96',
-      maxRentDuration: '30',
+      nftAddress: '0xd07dc4262bcdbf85190c01c996b4c06a461d2430',
       dailyRentPrice: '0x000000c8',
       nftPrice: '0x00020000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1628166812',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '129',
-      cursor: 129,
-      nftAddress: '0xd07dc4262bcdbf85190c01c996b4c06a461d2430',
       tokenId: '253786',
-      lenderAddress: '0xecd963ccfb50d6a38d49289640d1d37e9f6a0e96',
-      maxRentDuration: '10',
+      nftAddress: '0xd07dc4262bcdbf85190c01c996b4c06a461d2430',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '5',
-      isERC721: false,
-      lentAt: '1628167141',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '130',
-      cursor: 130,
-      nftAddress: '0xd07dc4262bcdbf85190c01c996b4c06a461d2430',
       tokenId: '178843',
-      lenderAddress: '0xd425333dd22b049f143522e519a06462c633f37a',
-      maxRentDuration: '1',
+      nftAddress: '0xd07dc4262bcdbf85190c01c996b4c06a461d2430',
       dailyRentPrice: '0x00020000',
       nftPrice: '0x01f40000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1628208321',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '134',
-      cursor: 134,
-      nftAddress: '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
       tokenId: '81089703431117778499039095787558921261590138106147275490437694069174079406367',
-      lenderAddress: '0x9b2ce2c8483e3dc0dc2e4d6580335d0204c89962',
-      maxRentDuration: '100',
+      nftAddress: '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
       dailyRentPrice: '0x00000003',
       nftPrice: '0x00001388',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1628619397',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '135',
-      cursor: 135,
-      nftAddress: '0x14b76477739b4eeeab7af197f638d882373b8329',
       tokenId: '46',
-      lenderAddress: '0x4ff93c87a18340212d5b146eb49fc514964f7cbb',
-      maxRentDuration: '7',
+      nftAddress: '0x14b76477739b4eeeab7af197f638d882373b8329',
       dailyRentPrice: '0x00000014',
       nftPrice: '0x00001f40',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1628669497',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '136',
-      cursor: 136,
-      nftAddress: '0xd07dc4262bcdbf85190c01c996b4c06a461d2430',
       tokenId: '641308',
-      lenderAddress: '0x72b5216bd6ee23a6ffc50340263dc9f8606dfe49',
-      maxRentDuration: '5',
+      nftAddress: '0xd07dc4262bcdbf85190c01c996b4c06a461d2430',
       dailyRentPrice: '0x000000c8',
       nftPrice: '0x00050000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1628781405',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '137',
-      cursor: 137,
-      nftAddress: '0x7870cc63b6b1af0aed0d6dd7c1efb39300b773eb',
       tokenId: '1493',
-      lenderAddress: '0x243706e13823949dca2283ce5607f618d9d17c31',
-      maxRentDuration: '30',
+      nftAddress: '0x7870cc63b6b1af0aed0d6dd7c1efb39300b773eb',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x00001af4',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1628824876',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '139',
-      cursor: 139,
-      nftAddress: '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
       tokenId: '27428416484006642314585243504927643578238882871549423173816902763765454520370',
-      lenderAddress: '0x902a24c603676766ef67dc27f92a9b87ffe22982',
-      maxRentDuration: '1',
+      nftAddress: '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x000007d0',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1629177027',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '140',
-      cursor: 140,
-      nftAddress: '0xe71cd39b62667519f35274c393271daa5048b8ce',
       tokenId: '2448',
-      lenderAddress: '0xed96d9ca875a2c7dc5c1c2934819f79bdeef24bf',
-      maxRentDuration: '1',
+      nftAddress: '0xe71cd39b62667519f35274c393271daa5048b8ce',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x000007d0',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1629177762',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '141',
-      cursor: 141,
-      nftAddress: '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
       tokenId: '34986437035383913738450534427909329307172872361642335618356871296476263705484',
-      lenderAddress: '0x8b8aa68c016be15f2920ebac6d3c996f6e88048f',
-      maxRentDuration: '1',
+      nftAddress: '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x00001388',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1629178099',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '142',
-      cursor: 142,
-      nftAddress: '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
       tokenId: '87893859676507660101239357928366715883153398510458713466193661973956762278732',
-      lenderAddress: '0xfa6afbdc71ab14d3b93a659e910895be78924d91',
-      maxRentDuration: '1',
+      nftAddress: '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x00640000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1629178803',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '143',
-      cursor: 143,
-      nftAddress: '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
       tokenId: '7220056614118103923358515235154455370737560527847341487194119938826327647786',
-      lenderAddress: '0x8df338f0a0f644c32e00ae18c0d5ee33d84cf9d6',
-      maxRentDuration: '1',
+      nftAddress: '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x00640000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1629179941',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '144',
-      cursor: 144,
-      nftAddress: '0xfaff15c6cdaca61a4f87d329689293e07c98f578',
       tokenId: '1',
-      lenderAddress: '0xc618830b837a082b242323e4a5f07b11b9b4e1e6',
-      maxRentDuration: '1',
+      nftAddress: '0xfaff15c6cdaca61a4f87d329689293e07c98f578',
       dailyRentPrice: '0x00000001',
       nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1629194840',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '146',
-      cursor: 146,
-      nftAddress: '0x85f0e02cb992aa1f9f47112f815f519ef1a59e2d',
       tokenId: '1001303602',
-      lenderAddress: '0xf3eddce8fb1215c9d9949a804dc252ae76be3daf',
-      maxRentDuration: '10',
+      nftAddress: '0x85f0e02cb992aa1f9f47112f815f519ef1a59e2d',
       dailyRentPrice: '0x00000014',
       nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1629315939',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '147',
-      cursor: 147,
-      nftAddress: '0x91f7bb6900d65d004a659f34205beafc3b4e136c',
       tokenId: '2543',
-      lenderAddress: '0x063933e834394026a89d9396e1b3da5fa10ed7d7',
-      maxRentDuration: '7',
+      nftAddress: '0x91f7bb6900d65d004a659f34205beafc3b4e136c',
       dailyRentPrice: '0x00000096',
       nftPrice: '0x00001b58',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1629319210',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '148',
-      cursor: 148,
-      nftAddress: '0x24d0cbd0d5d7b50212251c5dc7cb810e7af71f6a',
       tokenId: '1295',
-      lenderAddress: '0x62819b319eaec0f5efba2043c784781b6be5aa13',
-      maxRentDuration: '15',
+      nftAddress: '0x24d0cbd0d5d7b50212251c5dc7cb810e7af71f6a',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x000003e8',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1629370972',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '149',
-      cursor: 149,
-      nftAddress: '0x882a47e6070aca3f38ce6929501f4787803a072b',
       tokenId: '4719',
-      lenderAddress: '0xabca2289f0d03773e8b102248997e854aa36cd21',
-      maxRentDuration: '10',
+      nftAddress: '0x882a47e6070aca3f38ce6929501f4787803a072b',
       dailyRentPrice: '0x000007d0',
       nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1629376308',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '15',
-      cursor: 15,
-      nftAddress: '0xd07dc4262bcdbf85190c01c996b4c06a461d2430',
       tokenId: '8423',
-      lenderAddress: '0x426923e98e347158d5c471a9391edaea95516473',
-      maxRentDuration: '5',
+      nftAddress: '0xd07dc4262bcdbf85190c01c996b4c06a461d2430',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x000001f4',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1627067603',
-      collateralClaimed: true
+      renting: {
+        rentedAt: '1628124653'
+      }
     },
     {
       id: '150',
-      cursor: 150,
-      nftAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
       tokenId: '58126228409710187318361542949683789689096062472317502700704723889524584742913',
-      lenderAddress: '0x83f741fd08ae9286589b3c618b9371f424196178',
-      maxRentDuration: '7',
+      nftAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
       dailyRentPrice: '0x00020000',
       nftPrice: '0x00020000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1629405508',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '152',
-      cursor: 152,
-      nftAddress: '0xfaff15c6cdaca61a4f87d329689293e07c98f578',
       tokenId: '2',
-      lenderAddress: '0xbcfbd765a684ff568901abc6f4dc9c1c14e268be',
-      maxRentDuration: '5',
+      nftAddress: '0xfaff15c6cdaca61a4f87d329689293e07c98f578',
       dailyRentPrice: '0x00020000',
       nftPrice: '0x00320000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1629431862',
-      collateralClaimed: true
+      renting: {
+        rentedAt: '1646078483'
+      }
     },
     {
       id: '155',
-      cursor: 155,
-      nftAddress: '0x3edf71a31b80ff6a45fdb0858ec54de98df047aa',
       tokenId: '809',
-      lenderAddress: '0x3d95d4a6dbae0cd0643a82b13a13b08921d6adf7',
-      maxRentDuration: '255',
+      nftAddress: '0x3edf71a31b80ff6a45fdb0858ec54de98df047aa',
       dailyRentPrice: '0x000003e8',
       nftPrice: '0x000003e8',
-      paymentToken: '1',
-      lentAmount: '3',
-      isERC721: false,
-      lentAt: '1629830678',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '156',
-      cursor: 156,
-      nftAddress: '0xd07dc4262bcdbf85190c01c996b4c06a461d2430',
       tokenId: '241017',
-      lenderAddress: '0xa8d145dd3003817da1dc83f838ee5088b65acf2e',
-      maxRentDuration: '3',
+      nftAddress: '0xd07dc4262bcdbf85190c01c996b4c06a461d2430',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x000001f4',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1629831413',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '157',
-      cursor: 157,
-      nftAddress: '0x123456c13537c42f713fb748fb086344b825b38d',
       tokenId: '3',
-      lenderAddress: '0xc6641daf8c5896dc75a6aa845dc3717a738c02d7',
-      maxRentDuration: '180',
+      nftAddress: '0x123456c13537c42f713fb748fb086344b825b38d',
       dailyRentPrice: '0x00010000',
       nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1629888719',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '158',
-      cursor: 158,
-      nftAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
       tokenId: '15194713505295044958629072875605586714787912538539872048317041851452425764865',
-      lenderAddress: '0xf970947b24368c030fb0cf1aaef16a5ba92f5978',
-      maxRentDuration: '150',
+      nftAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
       dailyRentPrice: '0x0000000a',
       nftPrice: '0x00000fa0',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1630313451',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '159',
-      cursor: 159,
-      nftAddress: '0x74ee68a33f6c9f113e22b3b77418b75f85d07d22',
       tokenId: '6',
-      lenderAddress: '0x35f105e802da60d3312e5a89f51453a0c46b9dad',
-      maxRentDuration: '5',
+      nftAddress: '0x74ee68a33f6c9f113e22b3b77418b75f85d07d22',
       dailyRentPrice: '0x00640000',
       nftPrice: '0x00640000',
-      paymentToken: '2',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1630675178',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '160',
-      cursor: 160,
-      nftAddress: '0x8b4616926705fb61e9c4eeac07cd946a5d4b0760',
       tokenId: '2994',
-      lenderAddress: '0x68d78cbab080a6d6c20437fd7f83c41c2c41a16a',
-      maxRentDuration: '60',
+      nftAddress: '0x8b4616926705fb61e9c4eeac07cd946a5d4b0760',
       dailyRentPrice: '0x000007d0',
       nftPrice: '0x000007d0',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1631448692',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '161',
-      cursor: 161,
-      nftAddress: '0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91',
       tokenId: '8693',
-      lenderAddress: '0x914cbfa6cfed0ed42c69a516073e8491751de2a5',
-      maxRentDuration: '10',
+      nftAddress: '0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91',
       dailyRentPrice: '0x000003e8',
       nftPrice: '0x00001388',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1631596423',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '162',
-      cursor: 162,
-      nftAddress: '0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91',
       tokenId: '2860',
-      lenderAddress: '0x988c9ccdd64708314a2a509a2ad73c003a83fa0b',
-      maxRentDuration: '30',
+      nftAddress: '0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91',
       dailyRentPrice: '0x000003e8',
       nftPrice: '0x00001770',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1631598290',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '163',
-      cursor: 163,
-      nftAddress: '0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91',
       tokenId: '5932',
-      lenderAddress: '0xa415c1a04aebc73ee6326974ff7ee849f0962c1b',
-      maxRentDuration: '12',
+      nftAddress: '0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91',
       dailyRentPrice: '0x00000bb8',
       nftPrice: '0x00001b58',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1631600150',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '164',
-      cursor: 164,
-      nftAddress: '0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91',
       tokenId: '7820',
-      lenderAddress: '0x802dfecad91729826076eb62f9aeeda133baca1a',
-      maxRentDuration: '7',
+      nftAddress: '0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91',
       dailyRentPrice: '0x000007d0',
       nftPrice: '0x00001388',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1631600847',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '165',
-      cursor: 165,
-      nftAddress: '0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91',
       tokenId: '2455',
-      lenderAddress: '0x36013b07fe9c690bbb5698cb1aa9c23507421f27',
-      maxRentDuration: '18',
+      nftAddress: '0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91',
       dailyRentPrice: '0x000003e8',
       nftPrice: '0x00000bb8',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1631601053',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '166',
-      cursor: 166,
-      nftAddress: '0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91',
       tokenId: '3360',
-      lenderAddress: '0xbe0129dbcfb2d2df317d17e2deedf1b8b3fdea7f',
-      maxRentDuration: '10',
+      nftAddress: '0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91',
       dailyRentPrice: '0x000001f4',
       nftPrice: '0x000005dc',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1631601341',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '173',
-      cursor: 173,
-      nftAddress: '0x0b7438606a13f4e91305b36b7596dda4679689e3',
       tokenId: '134',
-      lenderAddress: '0x95a8cce18e2959ea8cbba9610a980c4200ce1fee',
-      maxRentDuration: '90',
+      nftAddress: '0x0b7438606a13f4e91305b36b7596dda4679689e3',
       dailyRentPrice: '0x00000001',
       nftPrice: '0x0dac0000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1631962740',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '174',
-      cursor: 174,
-      nftAddress: '0x18df6c571f6fe9283b87f910e41dc5c8b77b7da5',
       tokenId: '8671',
-      lenderAddress: '0x3daf9615b22e79128fd19ac878048efa92e27404',
-      maxRentDuration: '3',
+      nftAddress: '0x18df6c571f6fe9283b87f910e41dc5c8b77b7da5',
       dailyRentPrice: '0x00000064',
       nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1631976777',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '178',
-      cursor: 178,
-      nftAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
       tokenId: '86551122605171227884725911125719490282910141831025918475536648462115383803905',
-      lenderAddress: '0xdb4a057c4054e030e6f04619777c17cafa33cf65',
-      maxRentDuration: '15',
+      nftAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
       dailyRentPrice: '0x000003e8',
       nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1632979788',
-      collateralClaimed: false
+      renting: null
     },
     {
       id: '179',
-      cursor: 179,
-      nftAddress: '0x123456c13537c42f713fb748fb086344b825b38d',
       tokenId: '0',
-      lenderAddress: '0xc905e78385c9f1811e6fd919d86623943eb675ca',
-      maxRentDuration: '14',
-      dailyRentPrice: '0x00000005',
-      nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1633027813',
-      collateralClaimed: false
-    },
-    {
-      id: '18',
-      cursor: 18,
-      nftAddress: '0x60f80121c31a0d46b5279700f9df786054aa5ee5',
-      tokenId: '544825',
-      lenderAddress: '0x9ddbd7ea8415fd3b0d78f020d0fcfa7caaf88fce',
-      maxRentDuration: '60',
-      dailyRentPrice: '0x000003e8',
-      nftPrice: '0x00140000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1627068423',
-      collateralClaimed: false
-    },
-    {
-      id: '180',
-      cursor: 180,
       nftAddress: '0x123456c13537c42f713fb748fb086344b825b38d',
-      tokenId: '1',
-      lenderAddress: '0xc905e78385c9f1811e6fd919d86623943eb675ca',
-      maxRentDuration: '14',
       dailyRentPrice: '0x00000005',
-      nftPrice: '0x00001f40',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1633027983',
-      collateralClaimed: false
-    },
-    {
-      id: '181',
-      cursor: 181,
-      nftAddress: '0x123456c13537c42f713fb748fb086344b825b38d',
-      tokenId: '2',
-      lenderAddress: '0xc905e78385c9f1811e6fd919d86623943eb675ca',
-      maxRentDuration: '14',
-      dailyRentPrice: '0x00000005',
-      nftPrice: '0x00001388',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1633028100',
-      collateralClaimed: false
-    },
-    {
-      id: '182',
-      cursor: 182,
-      nftAddress: '0xfaff15c6cdaca61a4f87d329689293e07c98f578',
-      tokenId: '1',
-      lenderAddress: '0x4d2ed284cb9ebaab06bc01cc1c7f824e5b161378',
-      maxRentDuration: '2',
-      dailyRentPrice: '0x00020000',
-      nftPrice: '0x00020000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1633762747',
-      collateralClaimed: false
-    },
-    {
-      id: '183',
-      cursor: 183,
-      nftAddress: '0xf80ce420a75ee93cbb1af9d9c16e9c2f12b92cd3',
-      tokenId: '3367',
-      lenderAddress: '0x1935ba29d778f2e4623c42910910ef85be7021ca',
-      maxRentDuration: '1',
-      dailyRentPrice: '0x00010000',
       nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1633763963',
-      collateralClaimed: false
-    },
-    {
-      id: '184',
-      cursor: 184,
-      nftAddress: '0xfb61bd914d4cd5509ecbd4b16a0f96349e52db3d',
-      tokenId: '5466',
-      lenderAddress: '0x39feda1dc1ca4bc732c849c13e45956763790d90',
-      maxRentDuration: '1',
-      dailyRentPrice: '0x00001b58',
-      nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1633776144',
-      collateralClaimed: false
-    },
-    {
-      id: '186',
-      cursor: 186,
-      nftAddress: '0x0c07150e08e5decfde148e7da5a667043f579afc',
-      tokenId: '131',
-      lenderAddress: '0x14d05798e8fb39ea2604243fb6c4393dd7f36e14',
-      maxRentDuration: '5',
-      dailyRentPrice: '0x00001388',
-      nftPrice: '0x00001388',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1633786450',
-      collateralClaimed: false
-    },
-    {
-      id: '19',
-      cursor: 19,
-      nftAddress: '0x77a679db25d504d83d59b32467545c5a3783c88b',
-      tokenId: '1340',
-      lenderAddress: '0x07d5bc6406b10f7b9ee96dc958fe4048c96fb00a',
-      maxRentDuration: '10',
-      dailyRentPrice: '0x0000001e',
-      nftPrice: '0x00000384',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1627068483',
-      collateralClaimed: false
-    },
-    {
-      id: '193',
-      cursor: 193,
-      nftAddress: '0x74ee68a33f6c9f113e22b3b77418b75f85d07d22',
-      tokenId: '3',
-      lenderAddress: '0xd7f96f7fc4f66ffdb9a594b2525d6d44c075c0df',
-      maxRentDuration: '10',
-      dailyRentPrice: '0x0000028a',
-      nftPrice: '0x00410000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1633847074',
-      collateralClaimed: false
-    },
-    {
-      id: '197',
-      cursor: 197,
-      nftAddress: '0xfaff15c6cdaca61a4f87d329689293e07c98f578',
-      tokenId: '3',
-      lenderAddress: '0xb941d7fef340f25d306d2cf2af38d0cd6ec2e419',
-      maxRentDuration: '30',
-      dailyRentPrice: '0x0000000a',
-      nftPrice: '0x00020000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1633862378',
-      collateralClaimed: false
-    },
-    {
-      id: '198',
-      cursor: 198,
-      nftAddress: '0x0c07150e08e5decfde148e7da5a667043f579afc',
-      tokenId: '132',
-      lenderAddress: '0x4b703c81e1acbc81e985df97425437264ae19c5e',
-      maxRentDuration: '10',
-      dailyRentPrice: '0x00000064',
-      nftPrice: '0x00c80000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1633873213',
-      collateralClaimed: false
-    },
-    {
-      id: '199',
-      cursor: 199,
-      nftAddress: '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
-      tokenId: '87046172383342402750551312808048064592441889430055242942881121397269756448065',
-      lenderAddress: '0x15903df309f04d1e4944ceb27499301c7e6d8e55',
-      maxRentDuration: '100',
-      dailyRentPrice: '0x000003e8',
-      nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1633888192',
-      collateralClaimed: false
-    },
-    {
-      id: '2',
-      cursor: 2,
-      nftAddress: '0x2af75676692817d85121353f0d6e8e9ae6ad5576',
-      tokenId: '57901400454703047190737227506664559104227746562895456916506612236782709770370',
-      lenderAddress: '0x465dca9995d6c2a81a9be80fbced5a770dee3dae',
-      maxRentDuration: '1',
-      dailyRentPrice: '0x00000064',
-      nftPrice: '0x000000c9',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1626963918',
-      collateralClaimed: true
-    },
-    {
-      id: '20',
-      cursor: 20,
-      nftAddress: '0x77a679db25d504d83d59b32467545c5a3783c88b',
-      tokenId: '1341',
-      lenderAddress: '0x07d5bc6406b10f7b9ee96dc958fe4048c96fb00a',
-      maxRentDuration: '10',
-      dailyRentPrice: '0x0000001e',
-      nftPrice: '0x00000384',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1627068483',
-      collateralClaimed: false
-    },
-    {
-      id: '201',
-      cursor: 201,
-      nftAddress: '0xd07dc4262bcdbf85190c01c996b4c06a461d2430',
-      tokenId: '631350',
-      lenderAddress: '0xb24382080532f4694e45d2eb2ce542569a698f27',
-      maxRentDuration: '10',
-      dailyRentPrice: '0x0000000a',
-      nftPrice: '0x000000c8',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1633914375',
-      collateralClaimed: false
-    },
-    {
-      id: '202',
-      cursor: 202,
-      nftAddress: '0x0c07150e08e5decfde148e7da5a667043f579afc',
-      tokenId: '133',
-      lenderAddress: '0x5d26a059c9c62fd6b446ddcbd23d2844b111167b',
-      maxRentDuration: '1',
-      dailyRentPrice: '0x00010000',
-      nftPrice: '0x00010000',
-      paymentToken: '4',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1633929050',
-      collateralClaimed: false
-    },
-    {
-      id: '203',
-      cursor: 203,
-      nftAddress: '0xf513bd4ba753548505a245be1877c39a4f0b5c96',
-      tokenId: '139',
-      lenderAddress: '0x1e07fcd180ee0e6e32b23a2b7e0fb7af270e5633',
-      maxRentDuration: '1',
-      dailyRentPrice: '0x00640000',
-      nftPrice: '0x270f0000',
-      paymentToken: '2',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1633950149',
-      collateralClaimed: false
-    },
-    {
-      id: '204',
-      cursor: 204,
-      nftAddress: '0xeb41488e98122f011b71dfcf01d21fb94dc90e8e',
-      tokenId: '1',
-      lenderAddress: '0x797bc498edee4357a16a1054db0323cbd04c84c3',
-      maxRentDuration: '69',
-      dailyRentPrice: '0x00450000',
-      nftPrice: '0x00450000',
-      paymentToken: '2',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1633962483',
-      collateralClaimed: false
-    },
-    {
-      id: '205',
-      cursor: 205,
-      nftAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
-      tokenId: '1800635136685240310455967807644974304209586189348688222505901070336504365057',
-      lenderAddress: '0xba07e5cb42ca05d2fc3d96514461d7245050eb7b',
-      maxRentDuration: '10',
-      dailyRentPrice: '0x00050000',
-      nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1634003952',
-      collateralClaimed: false
-    },
-    {
-      id: '207',
-      cursor: 207,
-      nftAddress: '0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91',
-      tokenId: '2732',
-      lenderAddress: '0x5ca0f638674eb60b1a4f07d9abb502af8ef187fb',
-      maxRentDuration: '30',
-      dailyRentPrice: '0x00000001',
-      nftPrice: '0x00640000',
-      paymentToken: '4',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1634065498',
-      collateralClaimed: false
-    },
-    {
-      id: '208',
-      cursor: 208,
-      nftAddress: '0xc67ded0ec78b849e17771b2e8a7e303b4dad6dd4',
-      tokenId: '3',
-      lenderAddress: '0xb1a4573c3e241f3620a208b4001f76578e027106',
-      maxRentDuration: '1',
-      dailyRentPrice: '0x0000000a',
-      nftPrice: '0x00010000',
-      paymentToken: '2',
-      lentAmount: '4',
-      isERC721: false,
-      lentAt: '1634088635',
-      collateralClaimed: false
-    },
-    {
-      id: '209',
-      cursor: 209,
-      nftAddress: '0xfaff15c6cdaca61a4f87d329689293e07c98f578',
-      tokenId: '2',
-      lenderAddress: '0x7e8c0b6af42bc4f41dcda119a736167e1c3a81d5',
-      maxRentDuration: '10',
-      dailyRentPrice: '0x00000001',
-      nftPrice: '0x00000032',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1634129375',
-      collateralClaimed: false
-    },
-    {
-      id: '21',
-      cursor: 21,
-      nftAddress: '0x77a679db25d504d83d59b32467545c5a3783c88b',
-      tokenId: '1342',
-      lenderAddress: '0x07d5bc6406b10f7b9ee96dc958fe4048c96fb00a',
-      maxRentDuration: '10',
-      dailyRentPrice: '0x0000001e',
-      nftPrice: '0x00000384',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1627068483',
-      collateralClaimed: false
-    },
-    {
-      id: '210',
-      cursor: 210,
-      nftAddress: '0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91',
-      tokenId: '9932',
-      lenderAddress: '0x4dce05ee4a9046d21fd55c15656bd247e874b22b',
-      maxRentDuration: '30',
-      dailyRentPrice: '0x0bb80000',
-      nftPrice: '0x0bb80000',
-      paymentToken: '4',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1634173639',
-      collateralClaimed: false
-    },
-    {
-      id: '216',
-      cursor: 216,
-      nftAddress: '0xfaff15c6cdaca61a4f87d329689293e07c98f578',
-      tokenId: '3',
-      lenderAddress: '0x078ad5270b0240d8529f600f35a271fc6e2b2bd8',
-      maxRentDuration: '10',
-      dailyRentPrice: '0x00050000',
-      nftPrice: '0x00320000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1634441000',
-      collateralClaimed: false
-    },
-    {
-      id: '217',
-      cursor: 217,
-      nftAddress: '0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91',
-      tokenId: '2832',
-      lenderAddress: '0xe39853271f083fc2e042972d5b074fd5c23ce96a',
-      maxRentDuration: '30',
-      dailyRentPrice: '0x00000064',
-      nftPrice: '0x00001388',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1634465862',
-      collateralClaimed: false
-    },
-    {
-      id: '218',
-      cursor: 218,
-      nftAddress: '0x8e0543eacd5078ba9db88f34e2cbc24b7c2eb790',
-      tokenId: '1921',
-      lenderAddress: '0x7d82793e39ac007010787a56f60ebc17592818b3',
-      maxRentDuration: '12',
-      dailyRentPrice: '0x00010000',
-      nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1634543743',
-      collateralClaimed: false
-    },
-    {
-      id: '219',
-      cursor: 219,
-      nftAddress: '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
-      tokenId: '71405045565419446994691725770616334709491582968995020748526855451914486182369',
-      lenderAddress: '0x57e1edec286676f45aa020dffd45e6ee6501847b',
-      maxRentDuration: '100',
-      dailyRentPrice: '0x000003e8',
-      nftPrice: '0x000007d0',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1634545734',
-      collateralClaimed: false
-    },
-    {
-      id: '22',
-      cursor: 22,
-      nftAddress: '0x77a679db25d504d83d59b32467545c5a3783c88b',
-      tokenId: '1343',
-      lenderAddress: '0x07d5bc6406b10f7b9ee96dc958fe4048c96fb00a',
-      maxRentDuration: '10',
-      dailyRentPrice: '0x0000001e',
-      nftPrice: '0x00000384',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1627068483',
-      collateralClaimed: false
-    },
-    {
-      id: '220',
-      cursor: 220,
-      nftAddress: '0xc36442b4a4522e871399cd717abdd847ab11fe88',
-      tokenId: '1040',
-      lenderAddress: '0xdac959196d0c87b5f285cf259ff7d615f7071235',
-      maxRentDuration: '100',
-      dailyRentPrice: '0x000a0000',
-      nftPrice: '0x13880000',
-      paymentToken: '2',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1634555153',
-      collateralClaimed: false
-    },
-    {
-      id: '221',
-      cursor: 221,
-      nftAddress: '0x0db8c099b426677f575d512874d45a767e9acc3c',
-      tokenId: '1',
-      lenderAddress: '0x985d554590f3f73b707259b58ceb5177de89d1e0',
-      maxRentDuration: '60',
-      dailyRentPrice: '0x000000a0',
-      nftPrice: '0x00001068',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1634786267',
-      collateralClaimed: false
-    },
-    {
-      id: '223',
-      cursor: 223,
-      nftAddress: '0x414c5e3716bcec4b2373108b187914215695627a',
-      tokenId: '4826',
-      lenderAddress: '0x8b2bf57b16cae52a949d08ccf7b021dbb183a9db',
-      maxRentDuration: '1',
-      dailyRentPrice: '0x00000001',
-      nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1635114430',
-      collateralClaimed: false
-    },
-    {
-      id: '224',
-      cursor: 224,
-      nftAddress: '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
-      tokenId: '37243759469349281161924775429369657805961716333775071596079946665124195096842',
-      lenderAddress: '0x9b6c4f58e98e49b53701362447ccc1145e3a9df6',
-      maxRentDuration: '1',
-      dailyRentPrice: '0x0000000a',
-      nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1635117123',
-      collateralClaimed: false
-    },
-    {
-      id: '225',
-      cursor: 225,
-      nftAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
-      tokenId: '52820397638407744718979231755971195564155091815269134534002943200074781425665',
-      lenderAddress: '0x35a93caacfa60316603011f68ab487d027a0466e',
-      maxRentDuration: '30',
-      dailyRentPrice: '0x000001f4',
-      nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1635156019',
-      collateralClaimed: false
-    },
-    {
-      id: '228',
-      cursor: 228,
-      nftAddress: '0x1dfe7ca09e99d10835bf73044a23b73fc20623df',
-      tokenId: '131620',
-      lenderAddress: '0xecda2c559ade78ff0a3b1e5cf0ecd0d23143827b',
-      maxRentDuration: '2',
-      dailyRentPrice: '0x00001388',
-      nftPrice: '0x00000064',
-      paymentToken: '2',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1635510359',
-      collateralClaimed: false
-    },
-    {
-      id: '229',
-      cursor: 229,
-      nftAddress: '0xc36442b4a4522e871399cd717abdd847ab11fe88',
-      tokenId: '1494',
-      lenderAddress: '0xecda2c559ade78ff0a3b1e5cf0ecd0d23143827b',
-      maxRentDuration: '2',
-      dailyRentPrice: '0x00020000',
-      nftPrice: '0x00001388',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1635510776',
-      collateralClaimed: false
-    },
-    {
-      id: '23',
-      cursor: 23,
-      nftAddress: '0x77a679db25d504d83d59b32467545c5a3783c88b',
-      tokenId: '1344',
-      lenderAddress: '0x07d5bc6406b10f7b9ee96dc958fe4048c96fb00a',
-      maxRentDuration: '10',
-      dailyRentPrice: '0x0000001e',
-      nftPrice: '0x00000384',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1627068483',
-      collateralClaimed: false
-    },
-    {
-      id: '230',
-      cursor: 230,
-      nftAddress: '0xfd3fd9b793bac60e7f0a9b9fb759db3e250383cb',
-      tokenId: '7713',
-      lenderAddress: '0xbf6eb8672e7f4892aa65d9958dd9c86286566171',
-      maxRentDuration: '1',
-      dailyRentPrice: '0x000a0000',
-      nftPrice: '0x000a0000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1635693355',
-      collateralClaimed: false
-    },
-    {
-      id: '231',
-      cursor: 231,
-      nftAddress: '0x4be3223f8708ca6b30d1e8b8926cf281ec83e770',
-      tokenId: '5919',
-      lenderAddress: '0xa2fa6144168751d116336b58c5288feaf8bb12c1',
-      maxRentDuration: '255',
-      dailyRentPrice: '0x00ff0000',
-      nftPrice: '0x0bb80000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1636021423',
-      collateralClaimed: false
-    },
-    {
-      id: '232',
-      cursor: 232,
-      nftAddress: '0x14a2dff3b2fb4dffa35b2006e84bf1cbb0ac4bba',
-      tokenId: '3125',
-      lenderAddress: '0xa2fa6144168751d116336b58c5288feaf8bb12c1',
-      maxRentDuration: '255',
-      dailyRentPrice: '0x00010000',
-      nftPrice: '0x00640000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1636021877',
-      collateralClaimed: false
-    },
-    {
-      id: '233',
-      cursor: 233,
-      nftAddress: '0x14a2dff3b2fb4dffa35b2006e84bf1cbb0ac4bba',
-      tokenId: '3127',
-      lenderAddress: '0xa2fa6144168751d116336b58c5288feaf8bb12c1',
-      maxRentDuration: '255',
-      dailyRentPrice: '0x00010000',
-      nftPrice: '0x00640000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1636021877',
-      collateralClaimed: false
-    },
-    {
-      id: '234',
-      cursor: 234,
-      nftAddress: '0x14a2dff3b2fb4dffa35b2006e84bf1cbb0ac4bba',
-      tokenId: '3128',
-      lenderAddress: '0xa2fa6144168751d116336b58c5288feaf8bb12c1',
-      maxRentDuration: '255',
-      dailyRentPrice: '0x00010000',
-      nftPrice: '0x00640000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1636021877',
-      collateralClaimed: false
-    },
-    {
-      id: '235',
-      cursor: 235,
-      nftAddress: '0x14a2dff3b2fb4dffa35b2006e84bf1cbb0ac4bba',
-      tokenId: '3129',
-      lenderAddress: '0xa2fa6144168751d116336b58c5288feaf8bb12c1',
-      maxRentDuration: '255',
-      dailyRentPrice: '0x00010000',
-      nftPrice: '0x00640000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1636021877',
-      collateralClaimed: false
-    },
-    {
-      id: '236',
-      cursor: 236,
-      nftAddress: '0x14a2dff3b2fb4dffa35b2006e84bf1cbb0ac4bba',
-      tokenId: '3130',
-      lenderAddress: '0xa2fa6144168751d116336b58c5288feaf8bb12c1',
-      maxRentDuration: '255',
-      dailyRentPrice: '0x00010000',
-      nftPrice: '0x00640000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1636021877',
-      collateralClaimed: false
-    },
-    {
-      id: '237',
-      cursor: 237,
-      nftAddress: '0x14a2dff3b2fb4dffa35b2006e84bf1cbb0ac4bba',
-      tokenId: '3131',
-      lenderAddress: '0xa2fa6144168751d116336b58c5288feaf8bb12c1',
-      maxRentDuration: '255',
-      dailyRentPrice: '0x00010000',
-      nftPrice: '0x00640000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1636021877',
-      collateralClaimed: false
-    },
-    {
-      id: '238',
-      cursor: 238,
-      nftAddress: '0x14a2dff3b2fb4dffa35b2006e84bf1cbb0ac4bba',
-      tokenId: '3132',
-      lenderAddress: '0xa2fa6144168751d116336b58c5288feaf8bb12c1',
-      maxRentDuration: '255',
-      dailyRentPrice: '0x00010000',
-      nftPrice: '0x00640000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1636021877',
-      collateralClaimed: false
-    },
-    {
-      id: '239',
-      cursor: 239,
-      nftAddress: '0x14a2dff3b2fb4dffa35b2006e84bf1cbb0ac4bba',
-      tokenId: '3133',
-      lenderAddress: '0xa2fa6144168751d116336b58c5288feaf8bb12c1',
-      maxRentDuration: '255',
-      dailyRentPrice: '0x00010000',
-      nftPrice: '0x00640000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1636021877',
-      collateralClaimed: false
-    },
-    {
-      id: '24',
-      cursor: 24,
-      nftAddress: '0x77a679db25d504d83d59b32467545c5a3783c88b',
-      tokenId: '1345',
-      lenderAddress: '0x07d5bc6406b10f7b9ee96dc958fe4048c96fb00a',
-      maxRentDuration: '10',
-      dailyRentPrice: '0x0000001e',
-      nftPrice: '0x00000384',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1627068483',
-      collateralClaimed: false
-    },
-    {
-      id: '240',
-      cursor: 240,
-      nftAddress: '0x14a2dff3b2fb4dffa35b2006e84bf1cbb0ac4bba',
-      tokenId: '3134',
-      lenderAddress: '0xa2fa6144168751d116336b58c5288feaf8bb12c1',
-      maxRentDuration: '255',
-      dailyRentPrice: '0x00010000',
-      nftPrice: '0x00640000',
-      paymentToken: '3',
-      lentAmount: '1',
-      isERC721: true,
-      lentAt: '1636021877',
-      collateralClaimed: false
-    },
-    {
-      id: '242',
-      cursor: 242,
-      nftAddress: '0x537eb102e8a97c1c3a623da6d3d03171dd8cf6d6',
-      tokenId: '2',
-      lenderAddress: '0xc90f4fb05116ef4325e992c83e96266eb574edc2',
-      maxRentDuration: '30',
-      dailyRentPrice: '0x00000064',
-      nftPrice: '0x00010000',
-      paymentToken: '1',
-      lentAmount: '1',
-      isERC721: false,
-      lentAt: '1636543987',
-      collateralClaimed: false
-    }
-  ],
-  rentings: [
-    {
-      id: '103',
-      cursor: 10,
-      renterAddress: '0x67fdbb7326a6de4194b1dfee2e1e212952f0092b',
-      rentDuration: '1',
-      rentedAt: '1627777443'
-    },
-    {
-      id: '105',
-      cursor: 16,
-      renterAddress: '0x8b6e96947349c5efabd44bd8f8901d31951202c6',
-      rentDuration: '1',
-      rentedAt: '1628423889'
-    },
-    {
-      id: '107',
-      cursor: 13,
-      renterAddress: '0x000000041d22b34812630f07f7b3be152f430aa9',
-      rentDuration: '1',
-      rentedAt: '1628162203'
-    },
-    {
-      id: '11',
-      cursor: 28,
-      renterAddress: '0x15f7320adb990020956d29edb6ba17f3d468001e',
-      rentDuration: '1',
-      rentedAt: '1635914083'
-    },
-    {
-      id: '111',
-      cursor: 15,
-      renterAddress: '0xe7661cd7988c3a3f7b417ae10cbb7aff525ad921',
-      rentDuration: '1',
-      rentedAt: '1628305304'
-    },
-    {
-      id: '116',
-      cursor: 46,
-      renterAddress: '0xec1625f0be12b31d8edfdd165f7750ee4630a475',
-      rentDuration: '1',
-      rentedAt: '1644678834'
-    },
-    {
-      id: '117',
-      cursor: 101,
-      renterAddress: '0x000000a05938f4d791a9ef2121b82a943c4b181b',
-      rentDuration: '1',
-      rentedAt: '1648827658'
-    },
-    {
-      id: '124',
-      cursor: 33,
-      renterAddress: '0x80b1b33a888924ee204b27553d270b3ae6a22ac4',
-      rentDuration: '1',
-      rentedAt: '1639435000'
-    },
-    {
-      id: '126',
-      cursor: 14,
-      renterAddress: '0xd425333dd22b049f143522e519a06462c633f37a',
-      rentDuration: '1',
-      rentedAt: '1628262351'
-    },
-    {
-      id: '15',
-      cursor: 12,
-      renterAddress: '0x4be828f2e43a3bd9348e0c44416e4a3ed756842c',
-      rentDuration: '1',
-      rentedAt: '1628124653'
-    },
-    {
-      id: '152',
-      cursor: 50,
-      renterAddress: '0x7703d8c0b329a99e3d3f6db51a243dde4a8e498f',
-      rentDuration: '2',
-      rentedAt: '1646078483'
-    },
-    {
-      id: '18',
-      cursor: 67,
-      renterAddress: '0xbbbeee173a331ea777158c68775b7b3b7524eed4',
-      rentDuration: '2',
-      rentedAt: '1647205492'
-    },
-    {
-      id: '193',
-      cursor: 35,
-      renterAddress: '0xe0d88e0d79cdc70501cc3ff073fde2d19e903604',
-      rentDuration: '1',
-      rentedAt: '1639748038'
-    },
-    {
-      id: '2',
-      cursor: 2,
-      renterAddress: '0x00000444e5a1a667663b0adfd853e8efa0470698',
-      rentDuration: '1',
-      rentedAt: '1626964075'
-    },
-    {
-      id: '201',
-      cursor: 71,
-      renterAddress: '0xbbbeee173a331ea777158c68775b7b3b7524eed4',
-      rentDuration: '2',
-      rentedAt: '1647616311'
-    },
-    {
-      id: '208',
-      cursor: 58,
-      renterAddress: '0xbbbeee173a331ea777158c68775b7b3b7524eed4',
-      rentDuration: '1',
-      rentedAt: '1646837106'
-    },
-    {
-      id: '209',
-      cursor: 96,
-      renterAddress: '0x8fe2ad2ce33761eff0a8c1ff3f561ad2aa0d9bc8',
-      rentDuration: '1',
-      rentedAt: '1648805797'
-    },
-    {
-      id: '221',
-      cursor: 30,
-      renterAddress: '0x3290bb2dba0a4dea2c4723014c902a17b2bca1ac',
-      rentDuration: '1',
-      rentedAt: '1637310919'
-    },
-    {
-      id: '228',
-      cursor: 29,
-      renterAddress: '0x9f60699ce23f1ab86ec3e095b477ff79d4f409ad',
-      rentDuration: '1',
-      rentedAt: '1637095051'
-    },
-    {
-      id: '243',
-      cursor: 41,
-      renterAddress: '0xbbb897330075943e95d562f0562be379009261d7',
-      rentDuration: '1',
-      rentedAt: '1642254480'
-    },
-    {
-      id: '247',
-      cursor: 31,
-      renterAddress: '0x640705d72dacb529b71730637a1f17320bfbeb9a',
-      rentDuration: '3',
-      rentedAt: '1637361569'
-    },
-    {
-      id: '261',
-      cursor: 32,
-      renterAddress: '0x0503fa30eb51d3d14dd5157d31cd30f4ad0b7303',
-      rentDuration: '1',
-      rentedAt: '1637627874'
-    },
-    {
-      id: '264',
-      cursor: 104,
-      renterAddress: '0x8fe2ad2ce33761eff0a8c1ff3f561ad2aa0d9bc8',
-      rentDuration: '1',
-      rentedAt: '1649146614'
-    },
-    {
-      id: '265',
-      cursor: 111,
-      renterAddress: '0x76fdb331bb2180efc57b9c3c56cb2abe1a131b2d',
-      rentDuration: '1',
-      rentedAt: '1653164650'
-    },
-    {
-      id: '267',
-      cursor: 49,
-      renterAddress: '0x1f8a7898d5237ff11ea52d85cc3b633e6be9a939',
-      rentDuration: '1',
-      rentedAt: '1645265534'
-    },
-    {
-      id: '271',
-      cursor: 38,
-      renterAddress: '0xd3cd153156e97638b7fe71a8dd4a9a5c3a59a020',
-      rentDuration: '1',
-      rentedAt: '1640473794'
-    },
-    {
-      id: '272',
-      cursor: 107,
-      renterAddress: '0xd14bf35e81cb814ab91cf077ce33d96c4bf8db82',
-      rentDuration: '1',
-      rentedAt: '1650289207'
-    },
-    {
-      id: '279',
-      cursor: 43,
-      renterAddress: '0xd3cd153156e97638b7fe71a8dd4a9a5c3a59a020',
-      rentDuration: '1',
-      rentedAt: '1643241947'
-    },
-    {
-      id: '281',
-      cursor: 42,
-      renterAddress: '0xd3cd153156e97638b7fe71a8dd4a9a5c3a59a020',
-      rentDuration: '1',
-      rentedAt: '1643026641'
-    },
-    {
-      id: '288',
-      cursor: 36,
-      renterAddress: '0xd3cd153156e97638b7fe71a8dd4a9a5c3a59a020',
-      rentDuration: '1',
-      rentedAt: '1640294741'
-    },
-    {
-      id: '297',
-      cursor: 51,
-      renterAddress: '0x801df1dc09f3bc70885e05d1d4a94e5dd4b8c91b',
-      rentDuration: '1',
-      rentedAt: '1646156102'
-    },
-    {
-      id: '303',
-      cursor: 92,
-      renterAddress: '0x000000a05938f4d791a9ef2121b82a943c4b181b',
-      rentDuration: '1',
-      rentedAt: '1648734036'
-    },
-    {
-      id: '309',
-      cursor: 40,
-      renterAddress: '0xd3cd153156e97638b7fe71a8dd4a9a5c3a59a020',
-      rentDuration: '1',
-      rentedAt: '1642072056'
-    },
-    {
-      id: '319',
-      cursor: 44,
-      renterAddress: '0xd3cd153156e97638b7fe71a8dd4a9a5c3a59a020',
-      rentDuration: '1',
-      rentedAt: '1644100784'
-    },
-    {
-      id: '326',
-      cursor: 87,
-      renterAddress: '0xbbbeee173a331ea777158c68775b7b3b7524eed4',
-      rentDuration: '2',
-      rentedAt: '1647896096'
-    },
-    {
-      id: '330',
-      cursor: 45,
-      renterAddress: '0xd3cd153156e97638b7fe71a8dd4a9a5c3a59a020',
-      rentDuration: '1',
-      rentedAt: '1644661231'
-    },
-    {
-      id: '337',
-      cursor: 47,
-      renterAddress: '0x642d38840ebfda55911f83b1cf8b5fcb1d5fce36',
-      rentDuration: '1',
-      rentedAt: '1644928124'
-    },
-    {
-      id: '338',
-      cursor: 48,
-      renterAddress: '0x1f69ee6c9db214362368608cd7d886cc64142270',
-      rentDuration: '1',
-      rentedAt: '1644928520'
-    },
-    {
-      id: '345',
-      cursor: 100,
-      renterAddress: '0x000000a05938f4d791a9ef2121b82a943c4b181b',
-      rentDuration: '1',
-      rentedAt: '1648827658'
-    },
-    {
-      id: '352',
-      cursor: 143,
-      renterAddress: '0x60952c16425811d65cfa5ec7e4e086d71cd5dc46',
-      rentDuration: '1',
-      rentedAt: '1659334170'
-    },
-    {
-      id: '359',
-      cursor: 53,
-      renterAddress: '0xcf55578c96723aa1c404476c17850625c47d9fbb',
-      rentDuration: '1',
-      rentedAt: '1646483947'
-    },
-    {
-      id: '360',
-      cursor: 97,
-      renterAddress: '0x8fe2ad2ce33761eff0a8c1ff3f561ad2aa0d9bc8',
-      rentDuration: '1',
-      rentedAt: '1648805797'
-    },
-    {
-      id: '361',
-      cursor: 55,
-      renterAddress: '0xbbbeee173a331ea777158c68775b7b3b7524eed4',
-      rentDuration: '1',
-      rentedAt: '1646732604'
-    },
-    {
-      id: '362',
-      cursor: 63,
-      renterAddress: '0xbbbeee173a331ea777158c68775b7b3b7524eed4',
-      rentDuration: '1',
-      rentedAt: '1647018952'
-    },
-    {
-      id: '363',
-      cursor: 56,
-      renterAddress: '0xb0da4607ea3d1955544a4cb9512bae22d488802a',
-      rentDuration: '1',
-      rentedAt: '1646749888'
-    },
-    {
-      id: '364',
-      cursor: 57,
-      renterAddress: '0xbbb897330075943e95d562f0562be379009261d7',
-      rentDuration: '5',
-      rentedAt: '1646750284'
-    },
-    {
-      id: '365',
-      cursor: 60,
-      renterAddress: '0x872bff9949521a0329a4fe8166132bcfd613addb',
-      rentDuration: '1',
-      rentedAt: '1646930820'
-    },
-    {
-      id: '366',
-      cursor: 59,
-      renterAddress: '0x872bff9949521a0329a4fe8166132bcfd613addb',
-      rentDuration: '1',
-      rentedAt: '1646930820'
-    },
-    {
-      id: '373',
-      cursor: 69,
-      renterAddress: '0x872bff9949521a0329a4fe8166132bcfd613addb',
-      rentDuration: '1',
-      rentedAt: '1647440798'
-    },
-    {
-      id: '380',
-      cursor: 72,
-      renterAddress: '0xec5db9cb47dad4160cde1f31045f289403dea34e',
-      rentDuration: '4',
-      rentedAt: '1647683365'
-    },
-    {
-      id: '381',
-      cursor: 83,
-      renterAddress: '0x2babe76345d7eb15f6a1c0cddba04d8ee44491d5',
-      rentDuration: '10',
-      rentedAt: '1647771721'
-    },
-    {
-      id: '385',
-      cursor: 112,
-      renterAddress: '0x7a387e6f725a837df5922e3fe71827450a76a3e5',
-      rentDuration: '1',
-      rentedAt: '1653380264'
-    },
-    {
-      id: '390',
-      cursor: 84,
-      renterAddress: '0xa83b33cdcaf662385d5de01bd746d5cf2a627fac',
-      rentDuration: '3',
-      rentedAt: '1647775919'
-    },
-    {
-      id: '411',
-      cursor: 89,
-      renterAddress: '0xbcd8fc34307cc53755b6082c41b6ba643fbc6f99',
-      rentDuration: '2',
-      rentedAt: '1648585570'
-    },
-    {
-      id: '413',
-      cursor: 93,
-      renterAddress: '0x50c3374fd62dd09f18ccc01e1c20f5de66cd6dea',
-      rentDuration: '1',
-      rentedAt: '1648734429'
-    },
-    {
-      id: '418',
-      cursor: 131,
-      renterAddress: '0x040f20f41819a164b3e438fe0a17df8bcae36fc7',
-      rentDuration: '1',
-      rentedAt: '1659173182'
-    },
-    {
-      id: '419',
-      cursor: 183,
-      renterAddress: '0x98111289e72f43e528f9c0fe879f56805b57efe5',
-      rentDuration: '1',
-      rentedAt: '1663602191'
-    },
-    {
-      id: '420',
-      cursor: 141,
-      renterAddress: '0x5244736b3a8f898149ae33f013126a20ce7abc62',
-      rentDuration: '20',
-      rentedAt: '1659277136'
-    },
-    {
-      id: '422',
-      cursor: 99,
-      renterAddress: '0x8fe2ad2ce33761eff0a8c1ff3f561ad2aa0d9bc8',
-      rentDuration: '1',
-      rentedAt: '1648824305'
-    },
-    {
-      id: '425',
-      cursor: 105,
-      renterAddress: '0x085ed975a8b6b860de3c2b871da60a3f9f48a5b8',
-      rentDuration: '1',
-      rentedAt: '1649241554'
-    },
-    {
-      id: '458',
-      cursor: 108,
-      renterAddress: '0xc4111bb047d280e17d6ace046716fd4e36659ef4',
-      rentDuration: '3',
-      rentedAt: '1651906389'
-    },
-    {
-      id: '475',
-      cursor: 115,
-      renterAddress: '0xdac28927792b3bb1a7a956fbfb19bce720f1c014',
-      rentDuration: '1',
-      rentedAt: '1656220109'
-    },
-    {
-      id: '478',
-      cursor: 117,
-      renterAddress: '0xaa808591b910cb236f641b24c947d8e047f3528a',
-      rentDuration: '1',
-      rentedAt: '1657433760'
-    },
-    {
-      id: '483',
-      cursor: 114,
-      renterAddress: '0x341d2d099d0ad1986ce5e549a1a15631163877d6',
-      rentDuration: '1',
-      rentedAt: '1655454948'
-    },
-    {
-      id: '487',
-      cursor: 118,
-      renterAddress: '0x43ed63322703ca6249ddd5a094d9bee0a3e8aaf7',
-      rentDuration: '7',
-      rentedAt: '1657569783'
-    },
-    {
-      id: '512',
-      cursor: 120,
-      renterAddress: '0x5b197e3ee6770518f6f2735274522f48abd69864',
-      rentDuration: '1',
-      rentedAt: '1658871976'
-    },
-    {
-      id: '515',
-      cursor: 119,
-      renterAddress: '0x80bb4395fda32ffad247cf0c0ac34000331a53cb',
-      rentDuration: '1',
-      rentedAt: '1658871644'
-    },
-    {
-      id: '516',
-      cursor: 147,
-      renterAddress: '0xcc4e2cb3b01c9cb25446624edfd14faf8ea06046',
-      rentDuration: '2',
-      rentedAt: '1659701269'
-    },
-    {
-      id: '518',
-      cursor: 151,
-      renterAddress: '0x8bf8802f566f9a64ed946e7bc307f3c5678db5c5',
-      rentDuration: '1',
-      rentedAt: '1659789713'
-    },
-    {
-      id: '524',
-      cursor: 121,
-      renterAddress: '0x69e258c76f3aa94f28478040ea0705ebafdb1ddf',
-      rentDuration: '10',
-      rentedAt: '1658900302'
-    },
-    {
-      id: '525',
-      cursor: 122,
-      renterAddress: '0x69e258c76f3aa94f28478040ea0705ebafdb1ddf',
-      rentDuration: '3',
-      rentedAt: '1658900799'
-    },
-    {
-      id: '527',
-      cursor: 132,
-      renterAddress: '0xd55f3e83def318088a263a14d5cac8870e859d8e',
-      rentDuration: '1',
-      rentedAt: '1659240108'
-    },
-    {
-      id: '528',
-      cursor: 139,
-      renterAddress: '0x29ee39be789ada5cbb2051f4bdd70dd735aed7d0',
-      rentDuration: '5',
-      rentedAt: '1659267765'
-    },
-    {
-      id: '529',
-      cursor: 125,
-      renterAddress: '0x2917634fd7319c38d377fff1d9ccac4505921339',
-      rentDuration: '5',
-      rentedAt: '1658901045'
-    },
-    {
-      id: '530',
-      cursor: 124,
-      renterAddress: '0x2917634fd7319c38d377fff1d9ccac4505921339',
-      rentDuration: '3',
-      rentedAt: '1658900958'
-    },
-    {
-      id: '531',
-      cursor: 123,
-      renterAddress: '0x2917634fd7319c38d377fff1d9ccac4505921339',
-      rentDuration: '1',
-      rentedAt: '1658900902'
-    },
-    {
-      id: '533',
-      cursor: 138,
-      renterAddress: '0x8f2a0c6bdd5c1f61552558d2c0d2afe6d3dc5272',
-      rentDuration: '20',
-      rentedAt: '1659265649'
-    },
-    {
-      id: '546',
-      cursor: 127,
-      renterAddress: '0x27e5343620b95645448de3710ca4162055670109',
-      rentDuration: '5',
-      rentedAt: '1658979676'
-    },
-    {
-      id: '548',
-      cursor: 142,
-      renterAddress: '0x0944fa762ff734cf2b470460a373487783e49677',
-      rentDuration: '1',
-      rentedAt: '1659333395'
-    },
-    {
-      id: '550',
-      cursor: 129,
-      renterAddress: '0x3daf30c34a2db62c2a8608ce25209d7feddd2d31',
-      rentDuration: '1',
-      rentedAt: '1659073417'
-    },
-    {
-      id: '551',
-      cursor: 188,
-      renterAddress: '0xcf2b7c6bc98bfe0d6138a25a3b6162b51f75e05d',
-      rentDuration: '7',
-      rentedAt: '1666344371'
-    },
-    {
-      id: '553',
-      cursor: 144,
-      renterAddress: '0xad368131305f9e84e2e3a561d6aa530dad17e651',
-      rentDuration: '2',
-      rentedAt: '1659466562'
-    },
-    {
-      id: '558',
-      cursor: 135,
-      renterAddress: '0x078ad5270b0240d8529f600f35a271fc6e2b2bd8',
-      rentDuration: '5',
-      rentedAt: '1659262437'
-    },
-    {
-      id: '567',
-      cursor: 140,
-      renterAddress: '0xd314cb3388d80236ac7111be118f86d8558de8b5',
-      rentDuration: '1',
-      rentedAt: '1659273661'
-    },
-    {
-      id: '572',
-      cursor: 145,
-      renterAddress: '0xa2a3ea89acd476c7c9d71b5f2347d09c26ebcfed',
-      rentDuration: '2',
-      rentedAt: '1659509198'
-    },
-    {
-      id: '574',
-      cursor: 186,
-      renterAddress: '0x2744a205b3a599508295e53d0290b949104d57f4',
-      rentDuration: '6',
-      rentedAt: '1666333967'
-    },
-    {
-      id: '577',
-      cursor: 153,
-      renterAddress: '0x541fb8f82b694d58c6c7d3941b2d9dd57f3649e0',
-      rentDuration: '1',
-      rentedAt: '1659856245'
-    },
-    {
-      id: '593',
-      cursor: 146,
-      renterAddress: '0xa7debb68f2684074ec4354b68e36c34af363fd57',
-      rentDuration: '10',
-      rentedAt: '1659532338'
-    },
-    {
-      id: '594',
-      cursor: 156,
-      renterAddress: '0x040f20f41819a164b3e438fe0a17df8bcae36fc7',
-      rentDuration: '1',
-      rentedAt: '1659943734'
-    },
-    {
-      id: '595',
-      cursor: 150,
-      renterAddress: '0xbbe82615988f669d2b6bae63e24f4d44397894d5',
-      rentDuration: '2',
-      rentedAt: '1659786228'
-    },
-    {
-      id: '624',
-      cursor: 165,
-      renterAddress: '0x198ee179e7166332704919cb6f840a8e829bc75b',
-      rentDuration: '1',
-      rentedAt: '1660909379'
-    },
-    {
-      id: '625',
-      cursor: 148,
-      renterAddress: '0xab93bf0635ccf8e6e1e136922f1c793c3f4f6014',
-      rentDuration: '1',
-      rentedAt: '1659766187'
-    },
-    {
-      id: '627',
-      cursor: 149,
-      renterAddress: '0x1bc8dcd855d25181e204eaaef0dd996a92d9d27e',
-      rentDuration: '3',
-      rentedAt: '1659785153'
-    },
-    {
-      id: '631',
-      cursor: 152,
-      renterAddress: '0xb798e1944d57dac59da1ddd833506f49967dd6f3',
-      rentDuration: '3',
-      rentedAt: '1659789799'
-    },
-    {
-      id: '636',
-      cursor: 161,
-      renterAddress: '0xd55f3e83def318088a263a14d5cac8870e859d8e',
-      rentDuration: '2',
-      rentedAt: '1660401429'
-    },
-    {
-      id: '64',
-      cursor: 19,
-      renterAddress: '0xa0f87d54ea9820ed30010a6f84ae3a90a4b4c799',
-      rentDuration: '1',
-      rentedAt: '1628770753'
-    },
-    {
-      id: '643',
-      cursor: 154,
-      renterAddress: '0x707f7e54703fc6575bb73607f1a2923c2e2d9dad',
-      rentDuration: '5',
-      rentedAt: '1659865107'
-    },
-    {
-      id: '644',
-      cursor: 155,
-      renterAddress: '0x06424f5fb42c020405c6470536d3bbe811588061',
-      rentDuration: '5',
-      rentedAt: '1659865655'
-    },
-    {
-      id: '695',
-      cursor: 184,
-      renterAddress: '0x3725aa9fb2451184e10148d6cb500e3ab4120fd2',
-      rentDuration: '1',
-      rentedAt: '1664963555'
-    },
-    {
-      id: '702',
-      cursor: 160,
-      renterAddress: '0x0bf9f384f404eb199a4e691e260c517e229735f1',
-      rentDuration: '1',
-      rentedAt: '1660374988'
+      renting: null
     }
   ]
 }

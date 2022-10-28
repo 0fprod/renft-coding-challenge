@@ -4,6 +4,4 @@ export interface NFTMetadata {
   name: string
   title: string
   description: string
-  details: string[]
-  attributes: string[]
 }

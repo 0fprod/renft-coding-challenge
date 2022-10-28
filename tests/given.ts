@@ -8,8 +8,12 @@ export function givenAnNft(nft: Partial<NFT>): NFT {
     address: nft.address ?? 'irrelevant',
     fav: false,
     imageUrl: nft.imageUrl ?? 'irrelevant',
-    details: [],
-    attributes: [],
+    tokenId: '0',
+    availability: 'available',
+    collateralRequired: '0x00000000',
+    costOfRent: '0x00000000',
+    id: '1',
+    paymentToken: '1',
 
     ...nft
   }

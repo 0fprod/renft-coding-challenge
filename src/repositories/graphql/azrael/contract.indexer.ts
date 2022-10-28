@@ -1,25 +1,29 @@
-import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client'
-import { fetch } from 'cross-fetch'
 import { NftData } from '../../../models/NFTData'
 import { map } from './mapper/mapper'
-import { lendingsQuery } from './queries/lendings'
+import { lendingsQuery, availableLendings } from './queries'
+import { createClient, Client } from 'urql'
 
 export interface AzraelContractIndexer {
-  getLendingNfts: () => Promise<NftData[]>
+  clientExposedForTestingOnly: Client
+  getLendingNfts: (first: number, skip?: number) => Promise<NftData[]>
+  getAvailableLendingsOnly: (first: number) => Promise<NftData[]>
 }
 
 export const createAzraelContractIndexer = (): AzraelContractIndexer => {
   const uri: string = import.meta.env.VITE_AZRAEL_URL
-  const gqlClient = new ApolloClient({
-    cache: new InMemoryCache(),
-    link: new HttpLink({ uri, fetch })
-  })
+  const graphqlClient = createClient({ url: uri })
 
-  const getLendingNfts = (): Promise<NftData[]> => {
-    return gqlClient.query({ query: lendingsQuery }).then(map)
+  const getLendingNfts = async (first: number, skip: number = 0): Promise<NftData[]> => {
+    return await graphqlClient.query(lendingsQuery, { first, skip }).toPromise().then(map)
+  }
+
+  const getAvailableLendingsOnly = async (first: number): Promise<NftData[]> => {
+    return await graphqlClient.query(availableLendings, { first }).toPromise().then(map)
   }
 
   return {
-    getLendingNfts
+    clientExposedForTestingOnly: graphqlClient,
+    getLendingNfts,
+    getAvailableLendingsOnly
   }
 }
