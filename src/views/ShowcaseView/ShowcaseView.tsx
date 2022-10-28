@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-// import { useNft } from '../../hooks/useNft.hook'
 import { NFT } from '../../models/NFT'
 import { Showcase } from '../../components/Showcase/Showcase'
 import { Filters } from '../../components/Filters/Filters'
@@ -12,15 +11,11 @@ export const ShowcaseView: React.FC<{}> = () => {
   const [allNfts, setNfts] = useState<NFT[]>([])
   const [filteredNfts, setFilteredNfts] = useState<NFT[]>([])
   const { getNFTs } = useNft()
-  const { addFav, deleteFav, isFav } = useStorage()
+  const { addFav, deleteFav } = useStorage()
   const [page, setPage] = useState(0)
 
   const fetchMore = (): void => {
     setPage(page + 1)
-  }
-
-  const filterHandler = (term: string): void => {
-    setFilteredNfts(allNfts.filter((item) => item.title.toLowerCase().includes(term.toLowerCase())))
   }
 
   const toggleFav = (id: string): void => {
@@ -30,15 +25,21 @@ export const ShowcaseView: React.FC<{}> = () => {
     allNfts[index].fav ? addFav(id) : deleteFav(id)
   }
 
+  // Filters
+  const filterByTitle = (term: string): void => {
+    setFilteredNfts(allNfts.filter((item) => item.title.toLowerCase().includes(term.toLowerCase())))
+  }
+  const filterOnlyFavourites = (): void => {
+    setFilteredNfts([...allNfts.filter((item) => item.fav)])
+  }
+
+  // Update filtered data
   useEffect(() => {
     setFilteredNfts(allNfts)
   }, [allNfts])
 
   useEffect(() => {
     getNFTs(ITEMS_PER_PAGE, page).then((nfts) => {
-      nfts.forEach((item) => {
-        item.fav = isFav(item.id)
-      })
       setNfts([...allNfts, ...nfts])
     })
   }, [page])
@@ -47,7 +48,7 @@ export const ShowcaseView: React.FC<{}> = () => {
     <div>
       <h1>Showcase view</h1>
       <button onClick={fetchMore}> Fetch More</button>
-      <Filters onInput={filterHandler} toggleAvailable={() => {}} toggleFavourites={() => {}} />
+      <Filters onInput={filterByTitle} toggleAvailable={() => {}} toggleFavourites={filterOnlyFavourites} />
       <br />
       <Showcase nfts={filteredNfts} toggleFav={toggleFav} />
     </div>
