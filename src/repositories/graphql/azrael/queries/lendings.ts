@@ -1,12 +1,15 @@
 export const lendingsQuery = `
-  query GetNFTLendings($perPage: Int, $page: Int) {
-    allLendings(perPage: $perPage, page: $page) {
+  query GetLendingNfts ($first: Int, $skip: Int) {
+    lendings (first: $first, skip: $skip) {
       id
       tokenId
       nftAddress
       dailyRentPrice
       nftPrice
-      renting 
+      renting {
+        rentedAt
+      }
+      paymentToken
     }
   }
 `

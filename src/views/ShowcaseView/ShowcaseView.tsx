@@ -12,10 +12,10 @@ export const ShowcaseView: React.FC<{}> = () => {
   const [filteredNfts, setFilteredNfts] = useState<NFT[]>([])
   const { getNFTs } = useNft()
   const { addFav, deleteFav } = useStorage()
-  const [page, setPage] = useState(0)
+  const [skip, setSkip] = useState(0)
 
   const fetchMore = (): void => {
-    setPage(page + 1)
+    setSkip(allNfts.length)
   }
 
   const toggleFav = (id: string): void => {
@@ -39,10 +39,10 @@ export const ShowcaseView: React.FC<{}> = () => {
   }, [allNfts])
 
   useEffect(() => {
-    getNFTs(ITEMS_PER_PAGE, page).then((nfts) => {
+    getNFTs(ITEMS_PER_PAGE, skip).then((nfts) => {
       setNfts([...allNfts, ...nfts])
     })
-  }, [page])
+  }, [skip])
 
   return (
     <div>

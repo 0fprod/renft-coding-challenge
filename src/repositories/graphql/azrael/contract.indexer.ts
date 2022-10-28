@@ -1,19 +1,18 @@
 import { NftData } from '../../../models/NFTData'
 import { map } from './mapper/mapper'
 import { lendingsQuery } from './queries/lendings'
-import GraphQLjs from 'graphql.js'
+import { createClient } from 'urql'
 
 export interface AzraelContractIndexer {
-  getLendingNfts: (perPage: number, page?: number) => Promise<NftData[]>
+  getLendingNfts: (first: number, skip?: number) => Promise<NftData[]>
 }
 
 export const createAzraelContractIndexer = (): AzraelContractIndexer => {
   const uri: string = import.meta.env.VITE_AZRAEL_URL
-  const graphqlClient = GraphQLjs(uri)
+  const graphqlClient = createClient({ url: uri })
 
-  const getLendingNfts = async (perPage: number, page: number = 0): Promise<NftData[]> => {
-    const lazyQuery = graphqlClient(lendingsQuery)
-    return lazyQuery({ perPage, page }).then(map)
+  const getLendingNfts = async (first: number, skip: number = 0): Promise<NftData[]> => {
+    return await graphqlClient.query(lendingsQuery, { first, skip }).toPromise().then(map)
   }
 
   return {

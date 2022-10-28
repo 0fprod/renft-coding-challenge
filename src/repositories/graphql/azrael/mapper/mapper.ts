@@ -16,5 +16,5 @@ const mapOne = (lendingNft: any): NftData => {
 }
 
 export const map = (result: any): NftData[] => {
-  return result.allLendings.map(mapOne)
+  return result.data.lendings.map(mapOne)
 }
