@@ -23,5 +23,9 @@ Run the project with `npm run dev`. This will spin up the app at [http://localho
 `docker run -p 3000:3000 -rm renft-coding-challenge renft-coding-challenge`
 -->
 
+### Running the project 🚀
+
+Deployed to vercel [https://renft-coding-challenge.vercel.app/](https://renft-coding-challenge.vercel.app/)
+
 ### License 📝
 This project is licensed under the license terms of MIT that can be found in [LICENSE](./docs/LICENSE) document.
