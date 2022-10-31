@@ -5,7 +5,7 @@ import { Filters } from '../../components/Filters/Filters'
 import { useStorage } from '../../hooks/useStorage.hook'
 import { useNft } from '../../hooks/useNft.hook'
 
-const ITEMS_PER_PAGE = 2
+const ITEMS_PER_PAGE = 1
 
 export const ShowcaseView: React.FC<{}> = () => {
   const [allNfts, setNfts] = useState<NFT[]>([])
@@ -15,7 +15,7 @@ export const ShowcaseView: React.FC<{}> = () => {
   const [skip, setSkip] = useState(0)
 
   const fetchMore = (): void => {
-    setSkip(allNfts.length)
+    setSkip(allNfts.length === 0 ? ITEMS_PER_PAGE : allNfts.length)
   }
 
   const toggleFav = (id: string): void => {
